@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+<!--
+  -  入力ファイル（編集記号付きの原稿ファイルのこと）と
+  -  出力ファイル（プログラムが出力するタグ付きテキストのこと）の
+  -  文字コードを指定します。
+  -  指定できるのは、Shift_JIS もしくは UTF-8 です。
+  -  多少であれば、違う書き方でも大丈夫です。
+  -->
+<entry key="エンコード">shift-jis</entry>
+
+<!--
+  -  出力ファイルの改行コード。基本的にこのまま。
+  -->
+<entry key="改行コード">CR</entry>
+
+<!--
+  -  出力ファイルの命名書式。%s の部分に入力ファイルの
+  -  ファイル名（拡張子を除く）が入ります。
+  -->
+<entry key="保存ファイル名">%s_id.txt</entry>
+
+<!--
+  -  デフォルトの段落スタイル名。
+  -->
+<entry key="段落タグの既定値">WDB本文</entry>
+
+<!--
+  -  書式：
+  -
+  -  開始記号  [終了記号] : スタイル名
+  -
+  -  開始記号と終了記号の間は、任意の数のスペースもしくはタブで
+  -  区切ります。
+  -  開始記号と終了記号に挟まれた全ての段落にスタイルが適用されます。
+  -  終了記号を省いた場合、開始記号が書かれた行だけ適用されます。
+  -  開始記号、終了記号は、ともに変換後削除されます。
+  -  スタイル名の先頭に「!!」を置くと、同名の entry に書かれた
+  -  JavaScript が実行されます。
+  -  スタイル名の先頭に「!」を置くと、開始記号や終了記号は削除されずに
+  -  残ります。
+  -
+  -  禁止事項
+  -  開始記号や終了記号にコロンやスペースを使うことはできません。
+  -  スタイル名の先頭が「!」や「!!」であってはいけません。
+  - （「!」や「!!」はスタイル名の一部ではなく、上記の意味として
+  -  解釈されます。）
+  -->
+<entry key="段落タグ設定"><![CDATA[
+■■■                    : 小見出し
+■■                      : 中見出し
+■                        : 大見出し
+◆箇条中◆                : 箇条書き・中
+◆箇条中/◆  ◆/箇条中◆  : 箇条書き・中
+◆箇条太◆                : 箇条書き・太
+◆箇条太/◆  ◆/箇条太◆  : 箇条書き・中
+◆list◆                  : リスト
+◆list/◆    ◆/list◆    : リスト
+◆list-white◆            : リスト白
+◆list-white/◆ ◆/list-white◆ : リスト白
+◆1/2行間◆               : 半改行
+▼                        : 注釈
+●                        : 図表タイトル
+○リスト =====ここまで    : !!リスト
+]]></entry>
+
+<!--
+  -  書式は「段落タグ設定」に準じますが、終了記号を省くことは
+  -  できません。
+  -->
+<entry key="文字タグ設定"><![CDATA[
+◆b/◆      ◆/b◆       : 太字
+◆i/◆      ◆/i◆       : !!イタリック
+◆上/◆     ◆/上◆      : 上付き
+◆cmd/◆    ◆/cmd◆     : コマンド
+◆red/◆    ◆/red◆     : 赤字
+◆ルビ/◆   ◆/ルビ◆    : !!ルビ
+]]></entry>
+
+<!--
+  -  書式：
+  -
+  -  置換前 : 置換後
+  -
+  -  置換前の文字が置換後の文字に置き換わります。
+  -->
+<entry key="自由置換設定"><![CDATA[
+End▲          : <cFont:Key Snd Mother>n<cFont:>
+Alt▲          : <cFont:Key Snd Mother>m<cFont:>
+Ctrl▲         : <cFont:Key Snd Mother>l<cFont:>
+Shift▲        : <cFont:Key Snd Mother>`<cFont:>
+Tab▲          : <cFont:Key Snd Mother>k<cFont:>
+Esc▲          : <cFont:Key Snd Mother>j<cFont:>
+Delete▲       : <cFont:Key Snd Mother>g<cFont:>
+Insert▲       : <cFont:Key Snd Mother>f<cFont:>
+Pause▲        : <cFont:Key Snd Mother>s<cFont:>
+Break▲        : <cFont:Key Snd Mother>e<cFont:>
+Home▲         : <cFont:Key Snd Mother>o<cFont:>
+Back Space▲   : <cFont:Key Snd Mother>p<cFont:>
+Enter▲        : <cFont:Key Mother><00A9><cFont:>
+F10▲          : <cFont:Key Snd Mother>*<cFont:>
+F11▲          : <cFont:Key Snd Mother>+<cFont:>
+F12▲          : <cFont:Key Snd Mother>,<cFont:>
+F1▲: <cFont:Key Snd Mother>!<cFont:>
+F2▲: <cFont:Key Snd Mother>"<cFont:>
+F3▲: <cFont:Key Snd Mother>#<cFont:>
+F4▲: <cFont:Key Snd Mother>$<cFont:>
+F5▲: <cFont:Key Snd Mother>%<cFont:>
+F6▲: <cFont:Key Snd Mother>&<cFont:>
+F7▲: <cFont:Key Snd Mother>'<cFont:>
+F8▲: <cFont:Key Snd Mother>(<cFont:>
+F9▲: <cFont:Key Snd Mother>)<cFont:>
+→▲: <cFont:Key Snd Mother>z<cFont:>
+↓▲: <cFont:Key Snd Mother>|<cFont:>
+↑▲: <cFont:Key Snd Mother>{<cFont:>
+←▲: <cFont:Key Snd Mother>y<cFont:>
+<005C><▲: <cFont:Key Mother><005C><<cFont:>
+<005C>>▲: <cFont:Key Mother><005C>><cFont:>
+●→●:  <27A1>
+◆WDB◆: <cTypeface:PlusDatabase><cFont:Web><cSize:10>#<cTypeface:><cFont:><cSize:>
+]]></entry>
+
+<entry key="黒丸数字書式"><![CDATA[
+format = "%d●";
+code = 0x2776 - 1;
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i), new ReplaceTag('<' + (code + i).toString(16) + '>')));
+]]></entry>
+
+<entry key="白丸数字書式"><![CDATA[
+format = "%d○";
+code = 0x2460 - 1;
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i), new ReplaceTag('<' + (code + i).toString(16) + '>')));
+]]></entry>
+
+<entry key="黒四角数字書式"><![CDATA[
+format = "%d■";
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i), 
+    new ReplaceTag('<cTypeface:B><cFont:A-OTF ゴシックMB101 Pro><cotfcalt:0><cotfl:nalt\,7>' + 
+    i + '<cTypeface:><cFont:><cotfcalt:><cotfl:>')));
+]]></entry>
+
+<entry key="アルファベット"><![CDATA[
+format = "%s▲";
+var keys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()=-^~|[]+*;:,./?_@`\"";
+for (var i = 0; i < keys.length; i++) {
+  var c = keys.charAt(i);
+  if (c == '<' || c == '>') c = '\\' + c;
+  App.replaceSigns.add(new ReplaceSign(format.replace("%s", keys.charAt(i)), new ReplaceTag('<cFont:KeyMother>' + c + '<cFont:>')));
+}
+]]></entry>
+
+<entry key="ルビ"><![CDATA[
+var sep = "◆";
+
+for(;;) {
+  var s = targetLine.indexOf(startSign);
+  var e = targetLine.indexOf(endSign);
+  if (s == -1 || e == -1) break;
+  var left = targetLine.substring(0, s);
+  var cont = targetLine.substring(s + startSign.length, e);
+  var right = targetLine.substring(e + endSign.length);
+  var items = cont.split(sep);
+  targetLine = left + '<cr:1><crstr:' + items[1] + '><cmojir:0>' + items[0] + '<cr:><crstr:><cmojir:>' + right; 
+}
+targetLine;
+]]></entry>
+
+<entry key="イタリック"><![CDATA[
+var s = targetLine.indexOf(startSign);
+var e = targetLine.indexOf(endSign);
+if (s != -1 && e != -1) {
+  var left = targetLine.substring(0, s)
+  var cont = targetLine.substring(s + startSign.length, e);
+  var right = targetLine.substring(e + endSign.length);
+  cont = cont.replace(/([a-zA-Z0-9!"#$%&'\(\)\-=\^~\\@`\[\]{};+:\*<>,\.\/\?_]+)/g, "<CharStyle:!!>$1<CharStyle:>");
+  cont = cont.replace(/([^a-zA-Z0-9!"#$%&'\(\)\-=\^~\\@`\[\]{};+:\*<>,\.\/\?_]+)/g, "<CharStyle:和文の斜体>$1<CharStyle:>");
+  cont = cont.replace(/<CharStyle:!!>/g, "<CharStyle:イタリック>");
+  targetLine = left + cont + right;
+}
+targetLine; 
+]]></entry>
+
+<entry key="リスト"><![CDATA[
+function whenStartSignMuches() {
+  App.activeParagraphTag.add(new ParagraphTag("図表タイトル"));
+  App.out.println(targetLine);
+  App.activeParagraphTag.removeLast();
+  return undefined;
+}
+function whenEndSignMuches() {
+  return targetLine;
+}
+]]></entry>
+
+<entry key="その他自由設定"><![CDATA[
+/* ご利用にはご注意を！ */
+]]></entry>
+</properties>

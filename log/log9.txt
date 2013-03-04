@@ -1,0 +1,827 @@
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.Main exec
+情報: '/Users/dtpuser/Desktop/動作確認/元テキスト/MySQL01-final.txt'をタグ変換処理にかけようとしています。
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.SourceParserImpl parse
+致命的: 原稿ファイルの解析中にエラーが発生しました。
+行番号: 1
+2008/06/10 17:45:29 jp.gihyo.wdp.idtagreplacer.Main$DnDDropTarget drop
+致命的: 段落タグの開始タグと閉じタグの対応に不正がありました。
+2008/06/10 17:51:20 jp.gihyo.wdp.idtagreplacer.Main main
+情報: プログラムを起動しました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader <init>
+情報: タグ設定ファイル'/Users/dtpuser/Desktop/tagconf.xml'を読み込みます。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader <init>
+情報: タグ設定ファイルの読み込みを終了します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'エンコード'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'改行コード'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'保存ファイル名'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'段落タグの既定値'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'段落タグ設定'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'文字タグ設定'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'自由置換設定'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'WDB本文'が登録されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseParaSetting
+情報: '段落タグ設定'の内容を解析します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'小見出し'には、開始タグ'■■■'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'中見出し'には、開始タグ'■■'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'大見出し'には、開始タグ'■'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'箇条書き・中'には、開始タグ'◆箇条中◆'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'箇条書き・中'には、開始タグ'◆箇条中/◆'と閉じタグ'◆/箇条中◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'箇条書き・太'には、開始タグ'◆箇条太◆'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'箇条書き・太'には、開始タグ'◆箇条太/◆'と閉じタグ'◆/箇条太◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'・'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(1)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(2)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(3)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(4)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(5)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(6)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(7)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(8)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!箇条書き・中'には、開始タグ'(9)'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'リスト'には、開始タグ'◆list◆'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'リスト'には、開始タグ'◆list/◆'と閉じタグ'◆/list◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'リスト白'には、開始タグ'◆list-white◆'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'リスト白'には、開始タグ'◆list-white/◆'と閉じタグ'◆/list-white◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'半改行'には、開始タグ'◆1/2行間◆'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!注釈'には、開始タグ'注'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!注釈'には、開始タグ'編注'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'リスト'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!!リスト'には、開始タグ'＊＊＊＊＊＊＊●リスト'と閉じタグ'==ココマデ=='が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!図表タイトル'には、開始タグ'●'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'段落区切り'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setParaList
+情報: 段落スタイル'!!段落区切り'には、開始タグ'-*-*-*-'だけが設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseParaSetting
+情報: '段落タグ設定'の解析処理を終了します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseCharSetting
+情報: '文字タグ設定'の内容を解析します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'太字'には、開始タグ'◆b/◆'と閉じタグ'◆/b◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'イタリック'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'!!イタリック'には、開始タグ'◆i/◆'と閉じタグ'◆/i◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'上付き'には、開始タグ'◆上付/◆'と閉じタグ'◆/上付◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'コマンド'には、開始タグ'◆cmd/◆'と閉じタグ'◆/cmd◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'コマンド太字'には、開始タグ'◆cmd-b/◆'と閉じタグ'◆/cmd-b◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'赤字'には、開始タグ'◆red/◆'と閉じタグ'◆/red◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'ルビ'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'!!ルビ'には、開始タグ'◆ルビ/◆'と閉じタグ'◆/ルビ◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'リストの注・黒'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'!!リストの注・黒'には、開始タグ'◆comment/◆'と閉じタグ'◆/comment◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'リストの注・白'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser setCharList
+情報: 文字スタイル'!!リストの注・白'には、開始タグ'◆comment-white/◆'と閉じタグ'◆/comment-white◆'が設定されました。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseCharSetting
+情報: '文字タグ設定'の解析処理を終了します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseReplaceSetting
+情報: '自由置換設定'の内容を解析します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.SimpleTagconfParser parseReplaceSetting
+情報: '自由置換設定'の解析処理を終了します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'黒丸数字書式'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'白丸数字書式'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'アルファベット'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'黒四角数字書式'の値を取り出します。
+2008/06/10 17:51:26 jp.gihyo.wdp.idtagreplacer.PropertiesLoader$1 getProperty
+情報: プロパティ'その他自由設定'の値を取り出します。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.Main exec
+情報: '/Users/dtpuser/Desktop/動作確認/元テキスト/アガタ02.txt'をタグ変換処理にかけようとしています。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'リスト'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'リスト'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'WDB本文'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.Main exec
+情報: '/Users/dtpuser/Desktop/動作確認/元テキスト/sample-text.txt'をタグ変換処理にかけようとしています。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'大見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'大見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'注釈'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'注釈'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'図表タイトル'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'図表タイトル'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'中見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'中見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'小見出し'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'小見出し'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'半改行'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・太'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・太'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'箇条書き・中'が登録されました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 removeLast
+情報: 現在の段落タグから'箇条書き・中'を取り除きました。
+2008/06/10 17:51:32 jp.gihyo.wdp.idtagreplacer.App$1 add
+情報: 現在の段落タグとして、'半改行'が登録されました。
