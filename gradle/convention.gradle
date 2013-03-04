@@ -2,8 +2,11 @@ apply plugin: 'java'
 
 sourceCompatibility = targetCompatibility = 1.7
 
-def encoding = { it.encoding = 'UTF-8' }
-tasks.withType(AbstractCompile) each { encoding it.options }
+ext.encoding = 'UTF-8'
+tasks.withType(AbstractCompile) each { it.options.encoding = ext.encoding }
+javadoc.options { 
+	encoding = charSet = ext.encoding
+}
 
 task sourcesJar(type: Jar, dependsOn:classes) {
 	classifier = 'sources'
