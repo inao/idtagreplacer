@@ -1,0 +1,15 @@
+group = 'jp.gihyo.wdp'
+version = '0.0.1'
+
+apply from: file('gradle/convention.gradle')
+
+repositories { mavenCentral() }
+
+dependencies {
+	compile 'rhino:js:1.7R1'
+	testCompile 'junit:junit:4.+'
+}
+
+apply from: file('gradle/ide.gradle')
+
+task wrapper(type: Wrapper) { gradleVersion = '1.4' }

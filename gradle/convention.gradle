@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = targetCompatibility = 1.7
+
+def encoding = { it.encoding = 'UTF-8' }
+tasks.withType(AbstractCompile) each { encoding it.options }
+
+task sourcesJar(type: Jar, dependsOn:classes) {
+	classifier = 'sources'
+	from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn:javadoc) {
+	classifier = 'javadoc'
+	from javadoc.destinationDir
+}
+
+artifacts {
+	archives jar
+	archives sourcesJar
+	archives javadocJar
+}

@@ -3,4 +3,6 @@
 .LSOverride
 Icon
 ._*
+.*
 /bin
+/build
