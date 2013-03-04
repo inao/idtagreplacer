@@ -1,13 +1,13 @@
 package jp.gihyo.wdp.idtagreplacer.gui;
 
 /**
- * MainPanel �̋�̓I�Ȏ�����Ԃ����߂̃I�u�W�F�N�g�ł��B
+ * MainPanel の具体的な実装を返すためのオブジェクトです。
  * 
  */
 public class MainPanelFactory {
 	/**
-	 * MainPanel �̋�̓I�Ȏ�����Ԃ��܂��B
-	 * @return MainPanel �̋�̓I�Ȏ���
+	 * MainPanel の具体的な実装を返します。
+	 * @return MainPanel の具体的な実装
 	 */
 	public static MainPanel create() {
 		return new DnDMainPanel();

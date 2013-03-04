@@ -21,8 +21,8 @@ public class ScriptCharacterSign extends CharacterSign {
 	public String convertSign(String line) {
 		if (line.indexOf(startSign) == -1) return line;
 		if (functionString.length() == 0) {
-			Logger.global.warning("'" + startSign + "'‚ğŒŸo‚µ‚Ü‚µ‚½‚ªA" + 
-					"ŒÄ‚Ño‚·‚×‚«ƒXƒNƒŠƒvƒg‚Ìİ’è‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñBƒ^ƒO’uŠ·ˆ—‚ğƒXƒLƒbƒv‚µ‚Ü‚·B");
+			Logger.global.warning("'" + startSign + "'ã‚’æ¤œå‡ºã—ã¾ã—ãŸãŒã€" + 
+					"å‘¼ã³å‡ºã™ã¹ãã‚¹ã‚¯ãƒªãƒ—ãƒˆã®è¨­å®šãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ã‚¿ã‚°ç½®æ›å‡¦ç†ã‚’ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚");
 			return line;
 		}
 		
@@ -50,8 +50,8 @@ public class ScriptCharacterSign extends CharacterSign {
 		try {
 			ret = r.launch(functionString);
 		} catch (Exception e) {
-			Logger.global.warning("'" + tagName + "'‚ÌJavaScript‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B" +
-					"ƒƒbƒZ[ƒWF" + e.getMessage());
+			Logger.global.warning("'" + tagName + "'ã®JavaScriptã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚" +
+					"ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼š" + e.getMessage());
 		}
 		
 		return ret;

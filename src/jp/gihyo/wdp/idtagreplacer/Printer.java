@@ -9,16 +9,16 @@ import java.io.OutputStreamWriter;
 import java.nio.charset.Charset;
 
 /**
- * �ۑ���̃t�@�C�����o�͂��邽�߂̃N���X�ł��B
+ * 保存先のファイルを出力するためのクラスです。
  */
 public class Printer {
 	private String lineFeedCode = null;
 	private BufferedWriter writer = null;
 
 	/**
-	 * �w�肳�ꂽ�t�@�C���ƕ����R�[�h�ŁA�o�͗p�I�u�W�F�N�g�𐶐����܂��B
-	 * @param file �ۑ���̃t�@�C��
-	 * @param charset �ۑ��t�@�C���̕����R�[�h
+	 * 指定されたファイルと文字コードで、出力用オブジェクトを生成します。
+	 * @param file 保存先のファイル
+	 * @param charset 保存ファイルの文字コード
 	 * @throws FileNotFoundException
 	 */
 	public Printer(File file, Charset charset) throws FileNotFoundException {
@@ -28,9 +28,9 @@ public class Printer {
 	}
 
 	/**
-	 * �w�肳�ꂽ�t�@�C���p�X�ƕ����R�[�h�ŁA�o�͗p�I�u�W�F�N�g�𐶐����܂��B
-	 * @param filePath �ۑ���̃t�@�C���p�X
-	 * @param charset �ۑ��t�@�C���̕����R�[�h
+	 * 指定されたファイルパスと文字コードで、出力用オブジェクトを生成します。
+	 * @param filePath 保存先のファイルパス
+	 * @param charset 保存ファイルの文字コード
 	 * @throws FileNotFoundException
 	 */
 	public Printer(String filePath, Charset charset) throws FileNotFoundException {
@@ -38,13 +38,13 @@ public class Printer {
 	}
 	
 	/**
-	 * ���s�R�[�h���w�肵�܂��B
-	 * �w��ł���l�͌����I�� <code>LF</code>�A<code>CR</code>�A<code>CRLF</code> �̂����ꂩ�ł��B
-	 * ����̓��e������ "LF" �̂悤�Ɏw�肵�Ă��A���ڕ����R�[�h�Ŏw�肵�Ă����܂��܂���B
-	 * �v���O�����́A��L�̃��e�����ɑ΂��ẮA�Y�����镶���R�[�h�ɕϊ����鏈�����s���܂����A
-	 * ����ȊO�̕����񂪓n���ꂽ�ꍇ�́A�m�[�`�F�b�N�ł�������s�R�[�h�ƌ��Ȃ��A�o�̓t�@�C����
-	 * �e�s���ɕt�����܂��B
-	 * @param lineFeedCode ���s�R�[�h��\��������
+	 * 改行コードを指定します。
+	 * 指定できる値は原則的に <code>LF</code>、<code>CR</code>、<code>CRLF</code> のいずれかです。
+	 * これはリテラルで "LF" のように指定しても、直接文字コードで指定してもかまいません。
+	 * プログラムは、上記のリテラルに対しては、該当する文字コードに変換する処理を行いますが、
+	 * それ以外の文字列が渡された場合は、ノーチェックでそれを改行コードと見なし、出力ファイルの
+	 * 各行末に付加します。
+	 * @param lineFeedCode 改行コードを表す文字列
 	 */
 	public void setLineFeedCode(String lineFeedCode) {
 		String c = lineFeedCode;
@@ -60,41 +60,41 @@ public class Printer {
 	}
 	
 	/**
-	 * �I�u�W�F�N�g�ɐݒ肳��Ă�����s�R�[�h��Ԃ��܂��B
-	 * ����� "LF" �̂悤�ȉǂ̕�����ł͂Ȃ��A���ۂ̉��s�R�[�h���Ԃ���܂��B
-	 * @return ���s�R�[�h
+	 * オブジェクトに設定されている改行コードを返します。
+	 * これは "LF" のような可読の文字列ではなく、実際の改行コードが返されます。
+	 * @return 改行コード
 	 */
 	public String getLineFeedCode() {
 		return lineFeedCode;
 	}
 
 	/**
-	 * �n���ꂽ�����̕�������o�̓t�@�C���ɏo�͂��܂��B
-	 * ���s�R�[�h�͕t������܂���B
-	 * @param buf �o�͂��镶����
-	 * @throws IOException �o�͎��ɗ�O�����������ꍇ
+	 * 渡された引数の文字列を出力ファイルに出力します。
+	 * 改行コードは付加されません。
+	 * @param buf 出力する文字列
+	 * @throws IOException 出力時に例外が発生した場合
 	 */
 	public void print(String buf) throws IOException {
 		writer.write(buf);
 	}
 	
 	/**
-	 * �n���ꂽ�����̕�������o�̓t�@�C���ɏo�͂��܂��B
-	 * <code>print</code> ���\�b�h�ƈႢ�A�o�͎��ɉ��s�R�[�h���t������܂��B
-	 * �������A<code>print</code> ���\�b�h�Ƃ̈Ⴂ�́A���s�R�[�h�̂���A�Ȃ��ɗ��܂�܂���B
-	 * ���҂͈Ӗ��I�ɑ傫������Ă��܂��B
-	 * <code>println</code> ���\�b�h�́A�s���o�͂��ꂽ���Ƃ��v���O�����ɖ������܂��B
-	 * �v���O�����͂���ɂ���āA�i���^�O�̐�����s���܂��B
-	 * ����ɑ΂��A<code>print</code> ���\�b�h�ɂ���Ē��ډ��s�R�[�h���o�͂����ꍇ�́A
-	 * �v���O�����͒i���^�O�̐�����s���܂���B
-	 * @param buf �o�͂��镶����
-	 * @throws IOException �o�͎��ɗ�O�����������ꍇ
+	 * 渡された引数の文字列を出力ファイルに出力します。
+	 * <code>print</code> メソッドと違い、出力時に改行コードが付加されます。
+	 * しかし、<code>print</code> メソッドとの違いは、改行コードのあり、なしに留まりません。
+	 * 両者は意味的に大きく違っています。
+	 * <code>println</code> メソッドは、行が出力されたことをプログラムに明示します。
+	 * プログラムはこれによって、段落タグの制御を行います。
+	 * これに対し、<code>print</code> メソッドによって直接改行コードを出力した場合は、
+	 * プログラムは段落タグの制御を行いません。
+	 * @param buf 出力する文字列
+	 * @throws IOException 出力時に例外が発生した場合
 	 * @throws SourceParserException
 	 */
 	public void println(String buf) throws IOException, SourceParserException {
 		ParagraphTag t = null;
 		if (App.getInstance().getActiveParagraphTag().size() == 0) {
-			throw new SourceParserException("�i���^�O�̊J�n�^�O�ƕ��^�O�̑Ή��ɕs��������܂����B");
+			throw new SourceParserException("段落タグの開始タグと閉じタグの対応に不正がありました。");
 		} else {
 			t = App.getInstance().getActiveParagraphTag().getLast();
 			writer.write(t.getTagString());
@@ -103,7 +103,7 @@ public class Printer {
 	}
 	
 	/**
-	 * �ۑ���̃t�@�C������܂��B
+	 * 保存先のファイルを閉じます。
 	 * @throws IOException
 	 */
 	public void close() throws IOException {

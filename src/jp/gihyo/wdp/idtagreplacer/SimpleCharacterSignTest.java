@@ -6,22 +6,22 @@ import org.junit.Assert;
 
 public class SimpleCharacterSignTest {
 	@Test public void 
-	����̃^�O�ϊ������ȏ�s���邱��
+	同一のタグ変換が二回以上行えること
 	() {
 		CharacterTag t = new CharacterTag("Style");
-		CharacterSign s = new SimpleCharacterSign("��test��", "��/test��", t);
+		CharacterSign s = new SimpleCharacterSign("◆test◆", "◆/test◆", t);
 		String testBuf = 
-			"����������������������test��������������/test�������ĂƁ�test���Ȃɂʂ˂́�/test���͂Ђӂւ�";
+			"あいうえおかきくけこ◆test◆さしすせそ◆/test◆たちつてと◆test◆なにぬねの◆/test◆はひふへほ";
 		String expected =
-			"��������������������<CharStyle:Style>����������<CharStyle:>�����Ă�<CharStyle:Style>�Ȃɂʂ˂�<CharStyle:>�͂Ђӂւ�";
+			"あいうえおかきくけこ<CharStyle:Style>さしすせそ<CharStyle:>たちつてと<CharStyle:Style>なにぬねの<CharStyle:>はひふへほ";
 		String ret = s.convertSign(testBuf);
 		Assert.assertTrue(ret.equals(expected));
 		
-		s = new SimpleCharacterSign("�y�s", "�t�z", t);
+		s = new SimpleCharacterSign("【《", "》】", t);
 		testBuf = 
-			"�@�܂��A���[�U�́A�T�[�r�X���ƂɃA�J�E���g�̍쐬�^�Ǘ�������ς킵������������AOpenID�Ή��T�C�g�ł���΁A���g�́y�yOpenID URL�z�z����͂��邾���Ń��O�C�����邱�Ƃ��\�ɂȂ�܂��B�܂��AOpenID�̎d�l�́AOpenID�R�~���j�e�B��ML�ł̋c�_���x�[�X�ɍ쐬������J����邽�߁AOpenID�v���o�C�_�i�y�sOpenID Provider�t�z�A�ȉ��y�yOP�z�z�j�AOpenID�ɂ��F�؂�񋟂���T�[�r�X�v���o�C�_�i�y�sRelying Party�t�z�A�ȉ��y�yRP�z�z�j�̂ǂ�������B���g�ŗ����グ�鎖���ł��܂��B���̂��߁A���B�̌l��񂪓���̈�ЂɏW������Ƃ����S�z������܂���B";
+			"　まず、ユーザは、サービスごとにアカウントの作成／管理をする煩わしさから解放され、OpenID対応サイトであれば、自身の【【OpenID URL】】を入力するだけでログインすることが可能になります。また、OpenIDの仕様は、OpenIDコミュニティやMLでの議論をベースに作成され公開されるため、OpenIDプロバイダ（【《OpenID Provider》】、以下【【OP】】）、OpenIDによる認証を提供するサービスプロバイダ（【《Relying Party》】、以下【【RP】】）のどちらも私達自身で立ち上げる事ができます。そのため、私達の個人情報が特定の一社に集中するという心配もありません。";
 		expected =
-			"�@�܂��A���[�U�́A�T�[�r�X���ƂɃA�J�E���g�̍쐬�^�Ǘ�������ς킵������������AOpenID�Ή��T�C�g�ł���΁A���g�́y�yOpenID URL�z�z����͂��邾���Ń��O�C�����邱�Ƃ��\�ɂȂ�܂��B�܂��AOpenID�̎d�l�́AOpenID�R�~���j�e�B��ML�ł̋c�_���x�[�X�ɍ쐬������J����邽�߁AOpenID�v���o�C�_�i<CharStyle:Style>OpenID Provider<CharStyle:>�A�ȉ��y�yOP�z�z�j�AOpenID�ɂ��F�؂�񋟂���T�[�r�X�v���o�C�_�i<CharStyle:Style>Relying Party<CharStyle:>�A�ȉ��y�yRP�z�z�j�̂ǂ�������B���g�ŗ����グ�鎖���ł��܂��B���̂��߁A���B�̌l��񂪓���̈�ЂɏW������Ƃ����S�z������܂���B";
+			"　まず、ユーザは、サービスごとにアカウントの作成／管理をする煩わしさから解放され、OpenID対応サイトであれば、自身の【【OpenID URL】】を入力するだけでログインすることが可能になります。また、OpenIDの仕様は、OpenIDコミュニティやMLでの議論をベースに作成され公開されるため、OpenIDプロバイダ（<CharStyle:Style>OpenID Provider<CharStyle:>、以下【【OP】】）、OpenIDによる認証を提供するサービスプロバイダ（<CharStyle:Style>Relying Party<CharStyle:>、以下【【RP】】）のどちらも私達自身で立ち上げる事ができます。そのため、私達の個人情報が特定の一社に集中するという心配もありません。";
 		ret = s.convertSign(testBuf);
 		Assert.assertTrue(ret.equals(expected));
 	}

@@ -3,16 +3,16 @@ package jp.gihyo.wdp.idtagreplacer;
 import java.io.IOException;
 
 /**
- * ’i—‹L†‚Ìî•ñ‚ğ•Û‚µAƒ^ƒO•ÏŠ·ˆ—‚ğs‚¤ƒNƒ‰ƒX‚Å‚·B
+ * æ®µè½è¨˜å·ã®æƒ…å ±ã‚’ä¿æŒã—ã€ã‚¿ã‚°å¤‰æ›å‡¦ç†ã‚’è¡Œã†ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  */
 public class SimpleParagraphSign extends ParagraphSign {
-	/* ƒ^ƒO’uŠ·‚ÌÛ‚ÉAŒ³‚Ì‹L†‚ğíœ‚·‚é‚©‚Ç‚¤‚© */
+	/* ã‚¿ã‚°ç½®æ›ã®éš›ã«ã€å…ƒã®è¨˜å·ã‚’å‰Šé™¤ã™ã‚‹ã‹ã©ã†ã‹ */
 	private boolean removeSign = true;
 	
 	/**
-	 * ŠJn‹L†‚¾‚¯‚ğ‚Â’i—‹L†ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚·‚éB
-	 * @param sign ŠJn‹L†
-	 * @param tag ’i—ƒ^ƒO
+	 * é–‹å§‹è¨˜å·ã ã‘ã‚’æŒã¤æ®µè½è¨˜å·ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹ã€‚
+	 * @param sign é–‹å§‹è¨˜å·
+	 * @param tag æ®µè½ã‚¿ã‚°
 	 */
 	public SimpleParagraphSign(String sign, ParagraphTag tag) {
 		super(sign, tag);
@@ -23,8 +23,8 @@ public class SimpleParagraphSign extends ParagraphSign {
 	}
 	
 	/**
-	 * ƒ^ƒO’uŠ·‚ÌÛ‚ÉAŒ³‚Ì‹L†‚ğíœ‚·‚é‚©‚Ç‚¤‚©‚ğİ’è‚·‚éB
-	 * @param removeSign false ‚ğ“n‚·‚Æ‹L†‚ğc‚·B
+	 * ã‚¿ã‚°ç½®æ›ã®éš›ã«ã€å…ƒã®è¨˜å·ã‚’å‰Šé™¤ã™ã‚‹ã‹ã©ã†ã‹ã‚’è¨­å®šã™ã‚‹ã€‚
+	 * @param removeSign false ã‚’æ¸¡ã™ã¨è¨˜å·ã‚’æ®‹ã™ã€‚
 	 */
 	public void setRemoveSign(boolean removeSign) {
 		this.removeSign = removeSign;

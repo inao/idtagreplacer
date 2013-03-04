@@ -3,8 +3,8 @@ package jp.gihyo.wdp.idtagreplacer;
 import java.util.logging.Logger;
 
 /**
- * <p>ƒ^ƒOİ’èƒtƒ@ƒCƒ‹itagconf.xmlj‚Ìu’i—ƒ^ƒOİ’èv‚âu•¶šƒ^ƒOİ’èv‚Ì“à—e‚ğ‰ğÍ‚·‚éƒNƒ‰ƒX‚Å‚·B
- * ³‹K•\Œ»‚É‚æ‚é’Pƒ‚È‰ğÍˆ—‚ğs‚¢‚Ü‚·B</p>
+ * <p>ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆtagconf.xmlï¼‰ã®ã€Œæ®µè½ã‚¿ã‚°è¨­å®šã€ã‚„ã€Œæ–‡å­—ã‚¿ã‚°è¨­å®šã€ã®å†…å®¹ã‚’è§£æã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+ * æ­£è¦è¡¨ç¾ã«ã‚ˆã‚‹å˜ç´”ãªè§£æå‡¦ç†ã‚’è¡Œã„ã¾ã™ã€‚</p>
  */
 public class SimpleTagconfParser {
 	
@@ -12,11 +12,11 @@ public class SimpleTagconfParser {
 	private static final String CALL_SCRIPT_MARK = "!!";
 
 	/**
-	 * ’i—ƒ^ƒOİ’è‚Ì“à—e‚ğ‰ğÍ‚µAList ‚ÉƒZƒbƒg‚µ‚Ü‚·B
-	 * @param conf ’i—ƒ^ƒOİ’è‚Ì“à—e‘S•¶
+	 * æ®µè½ã‚¿ã‚°è¨­å®šã®å†…å®¹ã‚’è§£æã—ã€List ã«ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+	 * @param conf æ®µè½ã‚¿ã‚°è¨­å®šã®å†…å®¹å…¨æ–‡
 	 */
 	public void parseParaSetting(String conf) throws TagconfException {
-		Logger.global.info("'’i—ƒ^ƒOİ’è'‚Ì“à—e‚ğ‰ğÍ‚µ‚Ü‚·B");
+		Logger.global.info("'æ®µè½ã‚¿ã‚°è¨­å®š'ã®å†…å®¹ã‚’è§£æã—ã¾ã™ã€‚");
 		String[] lines = conf.split("[\n\r]+");
 		try {
 			for (String l : lines) {
@@ -27,15 +27,15 @@ public class SimpleTagconfParser {
 			Logger.global.severe(e.getMessage());
 			throw e;
 		}
-		Logger.global.info("'’i—ƒ^ƒOİ’è'‚Ì‰ğÍˆ—‚ğI—¹‚µ‚Ü‚·B");
+		Logger.global.info("'æ®µè½ã‚¿ã‚°è¨­å®š'ã®è§£æå‡¦ç†ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 	}
 	
 	/**
-	 * •¶šƒ^ƒOİ’è‚Ì“à—e‚ğ‰ğÍ‚µAList ‚ÉƒZƒbƒg‚µ‚Ü‚·B
-	 * @param conf •¶šƒ^ƒOİ’è‚Ì“à—e‘S•¶
+	 * æ–‡å­—ã‚¿ã‚°è¨­å®šã®å†…å®¹ã‚’è§£æã—ã€List ã«ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+	 * @param conf æ–‡å­—ã‚¿ã‚°è¨­å®šã®å†…å®¹å…¨æ–‡
 	 */
 	public void parseCharSetting(String conf) throws TagconfException {
-		Logger.global.info("'•¶šƒ^ƒOİ’è'‚Ì“à—e‚ğ‰ğÍ‚µ‚Ü‚·B");
+		Logger.global.info("'æ–‡å­—ã‚¿ã‚°è¨­å®š'ã®å†…å®¹ã‚’è§£æã—ã¾ã™ã€‚");
 		String[] lines = conf.split("[\n\r]+");
 		try {
 			for (String l : lines) {
@@ -46,7 +46,7 @@ public class SimpleTagconfParser {
 			Logger.global.severe(e.getMessage());
 			throw e;
 		}
-		Logger.global.info("'•¶šƒ^ƒOİ’è'‚Ì‰ğÍˆ—‚ğI—¹‚µ‚Ü‚·B");
+		Logger.global.info("'æ–‡å­—ã‚¿ã‚°è¨­å®š'ã®è§£æå‡¦ç†ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 	}
 
 	private String[] getStringsSplitedByColon(String line) throws TagconfException {
@@ -69,7 +69,7 @@ public class SimpleTagconfParser {
 			}
 			loc++;
 		}
-		throw new TagconfException("ƒ^ƒOİ’è‚É ':' ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB");
+		throw new TagconfException("ã‚¿ã‚°è¨­å®šã« ':' ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚");
 	}
 	
 	private String[] parseLine(String line) throws TagconfException {
@@ -81,7 +81,7 @@ public class SimpleTagconfParser {
 		String[] signs = items[0].trim().split("\\s+");
 
 		if (items.length != 2) {
-			throw new TagconfException("ƒ^ƒOİ’è‚É ':' ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB");
+			throw new TagconfException("ã‚¿ã‚°è¨­å®šã« ':' ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚");
 		}
 		String style = items[1].trim();
 		String[] ret = null;
@@ -95,7 +95,7 @@ public class SimpleTagconfParser {
 			ret[0] = style;      ret[1] = signs[0];
 			break;
 		default:
-			Logger.global.warning("" + signs.length + "‚Â‚Ì•ÒW‹L†‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B2‚Â–ÚˆÈã‚Ì•ÒW‹L†‚Í–³‹‚³‚ê‚Ü‚·B\n" + line);
+			Logger.global.warning("" + signs.length + "ã¤ã®ç·¨é›†è¨˜å·ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚2ã¤ç›®ä»¥ä¸Šã®ç·¨é›†è¨˜å·ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚\n" + line);
 		}
 		return ret;
 	}
@@ -123,9 +123,9 @@ public class SimpleTagconfParser {
 					new SimpleParagraphSign(items[1], t);
 		}
 		App.getInstance().getParagraphSigns().add(s);
-		Logger.global.info("’i—ƒXƒ^ƒCƒ‹'"+ items[0] +"'‚É‚ÍA" + 
-				(items.length == 3 ? "ŠJnƒ^ƒO'" + items[1] + "'‚Æ•Â‚¶ƒ^ƒO'" + items[2] + "'" : 
-					"ŠJnƒ^ƒO'" + items[1] + "'‚¾‚¯") + "‚ªİ’è‚³‚ê‚Ü‚µ‚½B");
+		Logger.global.info("æ®µè½ã‚¹ã‚¿ã‚¤ãƒ«'"+ items[0] +"'ã«ã¯ã€" + 
+				(items.length == 3 ? "é–‹å§‹ã‚¿ã‚°'" + items[1] + "'ã¨é–‰ã˜ã‚¿ã‚°'" + items[2] + "'" : 
+					"é–‹å§‹ã‚¿ã‚°'" + items[1] + "'ã ã‘") + "ãŒè¨­å®šã•ã‚Œã¾ã—ãŸã€‚");
 	}
 	
 	private void setCharList(String[] items) {
@@ -137,16 +137,16 @@ public class SimpleTagconfParser {
 			s = new ScriptCharacterSign(items[1], items[2], t);
 		}
 		App.getInstance().getCharacterSigns().add(s);
-		Logger.global.info("•¶šƒXƒ^ƒCƒ‹'" + items[0] + "'‚É‚ÍAŠJnƒ^ƒO'" + 
-				items[1] + "'‚Æ•Â‚¶ƒ^ƒO'" + items[2] + "'‚ªİ’è‚³‚ê‚Ü‚µ‚½B");
+		Logger.global.info("æ–‡å­—ã‚¹ã‚¿ã‚¤ãƒ«'" + items[0] + "'ã«ã¯ã€é–‹å§‹ã‚¿ã‚°'" + 
+				items[1] + "'ã¨é–‰ã˜ã‚¿ã‚°'" + items[2] + "'ãŒè¨­å®šã•ã‚Œã¾ã—ãŸã€‚");
 	}
 
 	/**
-	 * ©—R’uŠ·İ’è‚Ì“à—e‚ğ‰ğÍ‚µAList ‚ÉƒZƒbƒg‚µ‚Ü‚·B
-	 * @param property ©—R’uŠ·İ’è‚Ì“à—e‘S•¶
+	 * è‡ªç”±ç½®æ›è¨­å®šã®å†…å®¹ã‚’è§£æã—ã€List ã«ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+	 * @param property è‡ªç”±ç½®æ›è¨­å®šã®å†…å®¹å…¨æ–‡
 	 */
 	public void parseReplaceSetting(String property) {
-		Logger.global.info("'©—R’uŠ·İ’è'‚Ì“à—e‚ğ‰ğÍ‚µ‚Ü‚·B");
+		Logger.global.info("'è‡ªç”±ç½®æ›è¨­å®š'ã®å†…å®¹ã‚’è§£æã—ã¾ã™ã€‚");
 		String[] lines = property.split("[\n\r]+");
 		for (String l : lines) {
 			if (l.trim().length() == 0) continue;
@@ -155,6 +155,6 @@ public class SimpleTagconfParser {
 			ReplaceTag t = new ReplaceTag(items[1].trim());
 			App.getInstance().getReplaceSigns().add(new ReplaceSign(items[0].trim(), t));
 		}
-		Logger.global.info("'©—R’uŠ·İ’è'‚Ì‰ğÍˆ—‚ğI—¹‚µ‚Ü‚·B");
+		Logger.global.info("'è‡ªç”±ç½®æ›è¨­å®š'ã®è§£æå‡¦ç†ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 	}
 }

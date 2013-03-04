@@ -1,12 +1,12 @@
 package jp.gihyo.wdp.idtagreplacer.gui;
 
 /**
- * ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒƒCƒ“ƒEƒBƒ“ƒhƒE‚ÌŽÀ‘•‚ð•Ô‚µ‚Ü‚·B
+ * ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ¡ã‚¤ãƒ³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®å®Ÿè£…ã‚’è¿”ã—ã¾ã™ã€‚
  */
 public class MainFrameFactory {
 	/**
-	 * ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒƒCƒ“ƒEƒBƒ“ƒhƒE‚ÌŽÀ‘•‚ð•Ô‚µ‚Ü‚·B
-	 * @return MainFrame ƒCƒ“ƒ^[ƒtƒFƒCƒX‚Ì‹ï‘Ì“I‚ÈŽÀ‘•
+	 * ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ¡ã‚¤ãƒ³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®å®Ÿè£…ã‚’è¿”ã—ã¾ã™ã€‚
+	 * @return MainFrame ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹ã®å…·ä½“çš„ãªå®Ÿè£…
 	 */
 	public static MainFrame create() {
 		return new DnDFrame();

@@ -14,10 +14,10 @@ class PropertiesLoader {
 	private Properties properties = null;
 
 	/**
-	 * PropertiesLoader ƒIƒuƒWƒFƒNƒg‚ğ‰Šú‰»‚µ‚Ä•Ô‚µ‚Ü‚·B
-	 * •K‚¸V‹K‚ÌƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·BŠù‘¶‚ÌƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
-	 * @param fileName ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚ÌƒpƒX
-	 * @return PropertiesLoader ƒIƒuƒWƒFƒNƒg
+	 * PropertiesLoader ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’åˆæœŸåŒ–ã—ã¦è¿”ã—ã¾ã™ã€‚
+	 * å¿…ãšæ–°è¦ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚æ—¢å­˜ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™ã‚ã‘ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
+	 * @param fileName ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹
+	 * @return PropertiesLoader ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @throws IOException
 	 */
 	static PropertiesLoader getNewInstance(String fileName) throws IOException {
@@ -26,21 +26,21 @@ class PropertiesLoader {
 	}
 	
 	/**
-	 * Šù‘¶‚Ì PropertiesLoader ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚µ‚Ü‚·B
-	 * Šù‘¶‚ÌƒIƒuƒWƒFƒNƒg‚ª‚È‚¢ê‡i‚Ü‚¾ getNewInstance ‚ğŒÄ‚ñ‚Å‚¢‚È‚¢ê‡j‚Í
-	 * null ‚ğ•Ô‚µ‚Ü‚·B
+	 * æ—¢å­˜ã® PropertiesLoader ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+	 * æ—¢å­˜ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒãªã„å ´åˆï¼ˆã¾ã  getNewInstance ã‚’å‘¼ã‚“ã§ã„ãªã„å ´åˆï¼‰ã¯
+	 * null ã‚’è¿”ã—ã¾ã™ã€‚
 	 */
 	static PropertiesLoader getInstance() {
 		return instance;
 	}
 	
 	private PropertiesLoader(String fileName) throws IOException {
-		Logger.global.info("ƒ^ƒOİ’èƒtƒ@ƒCƒ‹'" + fileName + "'‚ğ“Ç‚İ‚İ‚Ü‚·B");
+		Logger.global.info("ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«'" + fileName + "'ã‚’èª­ã¿è¾¼ã¿ã¾ã™ã€‚");
 		
 		properties = new Properties() {
 				private static final long serialVersionUID = 1643376174439610083L;
 				public String getProperty(String key) {
-					Logger.global.info("ƒvƒƒpƒeƒB'" + key + "'‚Ì’l‚ğæ‚èo‚µ‚Ü‚·B");
+					Logger.global.info("ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£'" + key + "'ã®å€¤ã‚’å–ã‚Šå‡ºã—ã¾ã™ã€‚");
 					return super.getProperty(key);
 				}
 		};
@@ -48,7 +48,7 @@ class PropertiesLoader {
 		InputStream s = new FileInputStream(fileName);
 		properties.loadFromXML(s);
 		s.close();
-		Logger.global.info("ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚Ì“Ç‚İ‚İ‚ğI—¹‚µ‚Ü‚·B");
+		Logger.global.info("ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã®èª­ã¿è¾¼ã¿ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 	}
 	
 	Properties getProperties() {
@@ -70,13 +70,13 @@ class PropertiesInfo {
 
 class PropertiesLoaderHelper {
 	private void getValues(Properties properties, PropertiesInfo info) {
-		info.charsetName = properties.getProperty("ƒGƒ“ƒR[ƒh");
-		info.lineFeedCode = properties.getProperty("‰üsƒR[ƒh");
-		info.savefileFormat = properties.getProperty("•Û‘¶ƒtƒ@ƒCƒ‹–¼");
-		info.defaultParagraphName = properties.getProperty("’i—ƒ^ƒO‚ÌŠù’è’l");
-		info.paraSettings = properties.getProperty("’i—ƒ^ƒOİ’è");
-		info.charSettings = properties.getProperty("•¶šƒ^ƒOİ’è");
-		info.freeSettings = properties.getProperty("©—R’uŠ·İ’è");
+		info.charsetName = properties.getProperty("ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰");
+		info.lineFeedCode = properties.getProperty("æ”¹è¡Œã‚³ãƒ¼ãƒ‰");
+		info.savefileFormat = properties.getProperty("ä¿å­˜ãƒ•ã‚¡ã‚¤ãƒ«å");
+		info.defaultParagraphName = properties.getProperty("æ®µè½ã‚¿ã‚°ã®æ—¢å®šå€¤");
+		info.paraSettings = properties.getProperty("æ®µè½ã‚¿ã‚°è¨­å®š");
+		info.charSettings = properties.getProperty("æ–‡å­—ã‚¿ã‚°è¨­å®š");
+		info.freeSettings = properties.getProperty("è‡ªç”±ç½®æ›è¨­å®š");
 	}
 	
 	private void readTagsSettings(SimpleTagconfParser parser, PropertiesInfo info) throws TagconfException {
@@ -86,10 +86,10 @@ class PropertiesLoaderHelper {
 	}
 	
 	private void readJavaScriptSettings(Properties prop, PropertiesInfo info) throws TagconfException {
-		// JavaScript ‚ğÀs‚·‚éƒvƒƒpƒeƒB[–¼‚ÌƒŠƒXƒg
+		// JavaScript ã‚’å®Ÿè¡Œã™ã‚‹ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ¼åã®ãƒªã‚¹ãƒˆ
 		String[] settings = {
-				"•ŠÛ”š‘®", "”’ŠÛ”š‘®", "ƒAƒ‹ƒtƒ@ƒxƒbƒg", 
-				"•lŠp”š‘®", "‚»‚Ì‘¼©—Rİ’è"
+				"é»’ä¸¸æ•°å­—æ›¸å¼", "ç™½ä¸¸æ•°å­—æ›¸å¼", "ã‚¢ãƒ«ãƒ•ã‚¡ãƒ™ãƒƒãƒˆ", 
+				"é»’å››è§’æ•°å­—æ›¸å¼", "ãã®ä»–è‡ªç”±è¨­å®š"
 		};
 
 		RhinoLauncher r = new RhinoLauncher();
@@ -101,7 +101,7 @@ class PropertiesLoaderHelper {
 			for (String n: settings)
 				r.launch(prop.getProperty(n, ""));
 		} catch (Exception e) {
-			throw new TagconfException("tagconf.xml ‚Ì JavaScript ‚ğÀs’†‚ÉƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B\nƒƒbƒZ[ƒW : " + e.getMessage());
+			throw new TagconfException("tagconf.xml ã® JavaScript ã‚’å®Ÿè¡Œä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚\nãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ : " + e.getMessage());
 		}
 	}
 	
@@ -113,21 +113,21 @@ class PropertiesLoaderHelper {
 		getValues(prop, info);
 		
 		if (info.charsetName == null) {
-			Logger.global.severe("ƒGƒ“ƒR[ƒh‚Ìİ’è‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB");
-			throw new TagconfException("ƒGƒ“ƒR[ƒh‚Ìİ’è‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+			Logger.global.severe("ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã®è¨­å®šãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚");
+			throw new TagconfException("ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã®è¨­å®šãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“");
 		}
 		if (info.defaultParagraphName == null) {
-			throw new TagconfException("’i—ƒ^ƒO‚ÌŠù’è’l‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+			throw new TagconfException("æ®µè½ã‚¿ã‚°ã®æ—¢å®šå€¤ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“");
 		}
 
 		try {
 			info.charset = Charset.forName(info.charsetName);
 		} catch (IllegalCharsetNameException icne) {
-			Logger.global.severe("w’è‚³‚ê‚½ƒGƒ“ƒR[ƒh'" + info.charsetName + "'‚Í•s“KØ‚È’l‚Å‚·B");
-			throw new TagconfException("ƒGƒ“ƒR[ƒh‚Ìw’è‚ª•s“KØ‚Å‚·");
+			Logger.global.severe("æŒ‡å®šã•ã‚ŒãŸã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰'" + info.charsetName + "'ã¯ä¸é©åˆ‡ãªå€¤ã§ã™ã€‚");
+			throw new TagconfException("ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šãŒä¸é©åˆ‡ã§ã™");
 		} catch (UnsupportedCharsetException uce) {
-			Logger.global.severe("w’è‚³‚ê‚½ƒGƒ“ƒR[ƒh'" + info.charsetName + "'‚ÍƒTƒ|[ƒg‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
-			throw new TagconfException("ƒTƒ|[ƒg‚³‚ê‚Ä‚¢‚È‚¢ƒGƒ“ƒR[ƒh‚Å‚·");
+			Logger.global.severe("æŒ‡å®šã•ã‚ŒãŸã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰'" + info.charsetName + "'ã¯ã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
+			throw new TagconfException("ã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ãªã„ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã§ã™");
 		}
 		
 		App.getInstance().getActiveParagraphTag().add(new ParagraphTag(info.defaultParagraphName));

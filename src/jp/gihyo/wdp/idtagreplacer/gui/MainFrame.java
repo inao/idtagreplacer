@@ -1,43 +1,43 @@
 package jp.gihyo.wdp.idtagreplacer.gui;
 
 /**
- * ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒƒCƒ“ƒEƒBƒ“ƒhƒE‚Æ‚È‚éƒtƒŒ[ƒ€‚Å‚·B 
+ * ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ¡ã‚¤ãƒ³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã¨ãªã‚‹ãƒ•ãƒ¬ãƒ¼ãƒ ã§ã™ã€‚ 
  */
 public interface MainFrame {
 
 	/**
-	 * ƒtƒŒ[ƒ€‚ð•\Ž¦‚µ‚Ü‚·B
+	 * ãƒ•ãƒ¬ãƒ¼ãƒ ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
 	 */
 	public void show();
 
 	/**
-	 * Žw’è‚³‚ê‚½ƒƒbƒZ[ƒW‚ðŽ‚ÂAƒGƒ‰[ƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚ð•\Ž¦‚µ‚Ü‚·B
-	 * @param message ƒGƒ‰[ƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚É•\Ž¦‚µ‚½‚¢•¶Žš—ñ
+	 * æŒ‡å®šã•ã‚ŒãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒã¤ã€ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
+	 * @param message ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã«è¡¨ç¤ºã—ãŸã„æ–‡å­—åˆ—
 	 */
 	public void showErrorMessage(String message);
 
 	/**
-	 * Žw’è‚³‚ê‚½ƒ^ƒCƒgƒ‹‚ÆƒƒbƒZ[ƒW‚ðŽ‚ÂAƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚ð•\Ž¦‚µ‚Ü‚·B
-	 * @param title ƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚Ìƒ^ƒCƒgƒ‹ƒo[‚É•\Ž¦‚µ‚½‚¢•¶Žš—ñ
-	 * @param message ƒƒbƒZ[ƒWƒ{ƒbƒNƒX‚É•\Ž¦‚µ‚½‚¢•¶Žš—ñ
+	 * æŒ‡å®šã•ã‚ŒãŸã‚¿ã‚¤ãƒˆãƒ«ã¨ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒã¤ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
+	 * @param title ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã®ã‚¿ã‚¤ãƒˆãƒ«ãƒãƒ¼ã«è¡¨ç¤ºã—ãŸã„æ–‡å­—åˆ—
+	 * @param message ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒƒã‚¯ã‚¹ã«è¡¨ç¤ºã—ãŸã„æ–‡å­—åˆ—
 	 */
 	public void showMessage(String title, String message);
 
 	/**
-	 * ƒtƒŒ[ƒ€‚ÌƒXƒe[ƒ^ƒXƒo[‚Ì—Ìˆæ‚É•\Ž¦‚µ‚½‚¢ƒƒbƒZ[ƒW‚ðŽw’è‚µ‚Ü‚·B
-	 * @param string ƒXƒe[ƒ^ƒXƒo[‚Ì—Ìˆæ‚É•\Ž¦‚µ‚½‚¢•¶Žš—ñ
+	 * ãƒ•ãƒ¬ãƒ¼ãƒ ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã®é ˜åŸŸã«è¡¨ç¤ºã—ãŸã„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+	 * @param string ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã®é ˜åŸŸã«è¡¨ç¤ºã—ãŸã„æ–‡å­—åˆ—
 	 */
 	public void setStatusMessage(String string);
 
 	/**
-	 * ƒtƒŒ[ƒ€‚Éæ‚¹‚éƒpƒlƒ‹‚ðŽw’è‚µ‚Ü‚·B
-	 * @param p ƒtƒŒ[ƒ€‚Éæ‚¹‚½‚¢ƒpƒlƒ‹
+	 * ãƒ•ãƒ¬ãƒ¼ãƒ ã«ä¹—ã›ã‚‹ãƒ‘ãƒãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+	 * @param p ãƒ•ãƒ¬ãƒ¼ãƒ ã«ä¹—ã›ãŸã„ãƒ‘ãƒãƒ«
 	 */
 	public void setContentPane(MainPanel p);
 
 	/**
-	 * ƒtƒ@ƒCƒ‹‘I‘ðƒ_ƒCƒAƒƒO‚ð•\Ž¦‚·‚éB
-	 * @return ‘I‘ð‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ÌƒpƒXBƒLƒƒƒ“ƒZƒ‹‚Ìê‡‚Í nullB
+	 * ãƒ•ã‚¡ã‚¤ãƒ«é¸æŠžãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’è¡¨ç¤ºã™ã‚‹ã€‚
+	 * @return é¸æŠžã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã®å ´åˆã¯ nullã€‚
 	 */
 	public String showFileChooser(String title);
 }

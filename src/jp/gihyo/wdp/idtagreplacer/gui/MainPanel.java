@@ -5,7 +5,7 @@ import java.awt.LayoutManager;
 import javax.swing.JPanel;
 
 /**
- * アプリケーションのメインウィンドウの中身です。
+ * 繧｢繝励Μ繧ｱ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ繝｡繧､繝ｳ繧ｦ繧｣繝ｳ繝峨え縺ｮ荳ｭ霄ｫ縺ｧ縺吶�
  */
 public abstract class MainPanel extends JPanel {
 	MainPanel(LayoutManager layout) {

@@ -1,33 +1,33 @@
 package jp.gihyo.wdp.idtagreplacer;
 
 /**
- * <p>ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İ‚Ü‚ê‚½A’i—ƒ^ƒO‚Ìî•ñ‚ğŠi”[‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX‚Å‚·B</p>
- * <p>ƒIƒuƒWƒFƒNƒg‚ÍƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å“n‚³‚ê‚½ƒXƒ^ƒCƒ‹–¼‚ğ•Û‚µA
- * <code>getTagString</code> ƒƒ\ƒbƒh‚ªŒÄ‚Î‚ê‚½Û‚ÉA’i—ƒ^ƒO‚Ì•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B</p>
+ * <p>ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã¾ã‚ŒãŸã€æ®µè½ã‚¿ã‚°ã®æƒ…å ±ã‚’æ ¼ç´ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚</p>
+ * <p>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§æ¸¡ã•ã‚ŒãŸã‚¹ã‚¿ã‚¤ãƒ«åã‚’ä¿æŒã—ã€
+ * <code>getTagString</code> ãƒ¡ã‚½ãƒƒãƒ‰ãŒå‘¼ã°ã‚ŒãŸéš›ã«ã€æ®µè½ã‚¿ã‚°ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚</p>
  */
 public class ParagraphTag {
 	private String tagName = null;
 
 	/**
-	 * ƒXƒ^ƒCƒ‹–¼‚ğw’è‚µ‚ÄA’i—ƒ^ƒOî•ñƒIƒuƒWƒFƒNƒg‚ğì¬‚µ‚Ü‚·B
-	 * @param tagName ƒXƒ^ƒCƒ‹–¼
+	 * ã‚¹ã‚¿ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¦ã€æ®µè½ã‚¿ã‚°æƒ…å ±ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã¾ã™ã€‚
+	 * @param tagName ã‚¹ã‚¿ã‚¤ãƒ«å
 	 */
 	public ParagraphTag(String tagName) {
 		this.tagName  = tagName;
 	}
 	
 	/**
-	 * •Û‚µ‚Ä‚¢‚éƒXƒ^ƒCƒ‹–¼‚ğ•Ô‚µ‚Ü‚·B
-	 * @return ƒXƒ^ƒCƒ‹–¼
+	 * ä¿æŒã—ã¦ã„ã‚‹ã‚¹ã‚¿ã‚¤ãƒ«åã‚’è¿”ã—ã¾ã™ã€‚
+	 * @return ã‚¹ã‚¿ã‚¤ãƒ«å
 	 */
 	public String getTagName() {
 		return this.tagName;
 	}
 	
 	/**
-	 * •Û‚µ‚Ä‚¢‚éƒXƒ^ƒCƒ‹–¼‚ğ‚à‚Æ‚ÉA’i—ƒ^ƒO‚Ì•¶š—ñ‚ğ¶¬‚µ‚Ä•Ô‚µ‚Ü‚·B
-	 * •Ô‚·’l‚Í <code>&lt;ParaStyle:<i>style name</i>&gt;</code> ‚Å‚·B
-	 * @return ’i—ƒ^ƒO‚Ì•¶š—ñ
+	 * ä¿æŒã—ã¦ã„ã‚‹ã‚¹ã‚¿ã‚¤ãƒ«åã‚’ã‚‚ã¨ã«ã€æ®µè½ã‚¿ã‚°ã®æ–‡å­—åˆ—ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
+	 * è¿”ã™å€¤ã¯ <code>&lt;ParaStyle:<i>style name</i>&gt;</code> ã§ã™ã€‚
+	 * @return æ®µè½ã‚¿ã‚°ã®æ–‡å­—åˆ—
 	 */
 	public String getTagString() {
 		return "<ParaStyle:" + this.tagName + ">";

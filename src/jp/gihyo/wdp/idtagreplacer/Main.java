@@ -23,7 +23,7 @@ import jp.gihyo.wdp.idtagreplacer.gui.MainPanel;
 import jp.gihyo.wdp.idtagreplacer.gui.MainPanelFactory;
 
 /**
- * ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒXƒ^[ƒgƒ|ƒCƒ“ƒg‚Æ‚È‚éƒNƒ‰ƒX‚Å‚·B
+ * ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚¹ã‚¿ãƒ¼ãƒˆãƒã‚¤ãƒ³ãƒˆã¨ãªã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  */
 public class Main {
 	private Charset charset = null;
@@ -35,17 +35,17 @@ public class Main {
 	String defaultParagraphName = null;
 
 	/**
-	 * ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒXƒ^[ƒgƒ|ƒCƒ“ƒg‚Å‚·B
-	 * @param args ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“ˆø”i—˜—p‚µ‚È‚¢j
-	 * @throws IOException İ’èƒtƒ@ƒCƒ‹‚Ì“Ç‚İ‚İA‚ ‚é‚¢‚ÍƒƒK[¶¬‚É—áŠO‚ª”­¶‚µ‚½ê‡
+	 * ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚¹ã‚¿ãƒ¼ãƒˆãƒã‚¤ãƒ³ãƒˆã§ã™ã€‚
+	 * @param args ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å¼•æ•°ï¼ˆåˆ©ç”¨ã—ãªã„ï¼‰
+	 * @throws IOException è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã®èª­ã¿è¾¼ã¿æ™‚ã€ã‚ã‚‹ã„ã¯ãƒ­ã‚¬ãƒ¼ç”Ÿæˆæ™‚ã«ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆ
 	 */
 	public static void main(String[] args) throws IOException {
 		
-		// ‚±‚ê‚Í Mac OS X ‚Ìƒƒjƒ…[ƒo[‚Ì•\¦‚ğ§Œä‚·‚é‚½‚ß‚ÌƒR[ƒh‚Å‚·B
+		// ã“ã‚Œã¯ Mac OS X ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ã®è¡¨ç¤ºã‚’åˆ¶å¾¡ã™ã‚‹ãŸã‚ã®ã‚³ãƒ¼ãƒ‰ã§ã™ã€‚
 		System.setProperty("com.apple.mrj.application.apple.menu.about.name", "InDesign Tag Replacer");
 
 		setupLogger();
-		Logger.global.info("ƒvƒƒOƒ‰ƒ€‚ğ‹N“®‚µ‚Ü‚µ‚½B");
+		Logger.global.info("ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’èµ·å‹•ã—ã¾ã—ãŸã€‚");
 		
 		Main m = new Main();
 		try {
@@ -54,8 +54,8 @@ public class Main {
 			m.readProperties(m.tagconfFilePath);
 			m.setDropStop(false);
 		} catch (IOException ioe) {
-			if (m.frame != null) m.frame.showErrorMessage("tagconf.xml ‚ªŒ©‚Â‚©‚ç‚È‚¢‚©Aİ’è“à—e‚ª•s³‚Å‚·B");
-			Logger.global.severe("tagconf.xml ‚ªŒ©‚Â‚©‚ç‚È‚¢‚©Aİ’è“à—e‚ª•s³‚Å‚·B\n" + ioe.getMessage());
+			if (m.frame != null) m.frame.showErrorMessage("tagconf.xml ãŒè¦‹ã¤ã‹ã‚‰ãªã„ã‹ã€è¨­å®šå†…å®¹ãŒä¸æ­£ã§ã™ã€‚");
+			Logger.global.severe("tagconf.xml ãŒè¦‹ã¤ã‹ã‚‰ãªã„ã‹ã€è¨­å®šå†…å®¹ãŒä¸æ­£ã§ã™ã€‚\n" + ioe.getMessage());
 		} catch (TagconfException tage) {
 			if (m.frame != null) m.frame.showErrorMessage(tage.getMessage());
 			Logger.global.severe(tage.getMessage());
@@ -65,7 +65,7 @@ public class Main {
 	private String getTagconfFilePath(String defaultPath) {
 		File f = new File(defaultPath);
 		if (f.exists()) return defaultPath;
-		String p = frame.showFileChooser("ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B");
+		String p = frame.showFileChooser("ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚");
 		return p != null ? p : defaultPath;
 	}
 
@@ -96,12 +96,12 @@ public class Main {
 	
 	private void setDropStop(boolean stop) {
 		dropStop = stop;
-		frame.setStatusMessage(dropStop ? "" : "•ÒW‹L†•t‚«ƒeƒLƒXƒgƒtƒ@ƒCƒ‹‚ğƒhƒ‰ƒbƒO‚µ‚Ä‚­‚¾‚³‚¢B" );
+		frame.setStatusMessage(dropStop ? "" : "ç·¨é›†è¨˜å·ä»˜ããƒ†ã‚­ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‰ãƒ©ãƒƒã‚°ã—ã¦ãã ã•ã„ã€‚" );
 	}
 	
 	/**
-	 * ˆø”‚Å“n‚³‚ê‚½Šeƒtƒ@ƒCƒ‹‚ÉAƒ^ƒO•ÏŠ·ˆ—‚ğ{‚µ‚Ü‚·B
-	 * @param args ˆ—‘ÎÛ‚Æ‚È‚éƒtƒ@ƒCƒ‹‚ÌƒŠƒXƒg
+	 * å¼•æ•°ã§æ¸¡ã•ã‚ŒãŸå„ãƒ•ã‚¡ã‚¤ãƒ«ã«ã€ã‚¿ã‚°å¤‰æ›å‡¦ç†ã‚’æ–½ã—ã¾ã™ã€‚
+	 * @param args å‡¦ç†å¯¾è±¡ã¨ãªã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒªã‚¹ãƒˆ
 	 * @throws FileNotFoundException
 	 * @throws SourceParserException
 	 * @throws Exception
@@ -111,19 +111,19 @@ public class Main {
 		ListIterator<File> itr = args.listIterator();
 		while (itr.hasNext()) {
 			File f = itr.next();
-			Logger.global.info("'" + f.getPath() + "'‚ğƒ^ƒO•ÏŠ·ˆ—‚É‚©‚¯‚æ‚¤‚Æ‚µ‚Ä‚¢‚Ü‚·B");
+			Logger.global.info("'" + f.getPath() + "'ã‚’ã‚¿ã‚°å¤‰æ›å‡¦ç†ã«ã‹ã‘ã‚ˆã†ã¨ã—ã¦ã„ã¾ã™ã€‚");
 			if (f.isDirectory()) {
-				frame.showErrorMessage(f.getName() + "‚ÍƒfƒBƒŒƒNƒgƒŠ‚Å‚·Bˆ—‚Å‚«‚Ü‚¹‚ñB");
+				frame.showErrorMessage(f.getName() + "ã¯ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã™ã€‚å‡¦ç†ã§ãã¾ã›ã‚“ã€‚");
 				setDropStop(false);
-				throw new Exception("ƒfƒBƒŒƒNƒgƒŠ‚ğˆ—‚µ‚æ‚¤‚Æ‚µ‚Ü‚µ‚½B");
+				throw new Exception("ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å‡¦ç†ã—ã‚ˆã†ã¨ã—ã¾ã—ãŸã€‚");
 			} else if (f.isFile()) {
 				execEachFile(f);
 			}
 			App.getInstance().cleanupActiveParagraphTag();
 			App.getInstance().getActiveParagraphTag().add(new ParagraphTag(defaultParagraphName));
 		}
-		frame.showMessage("•ÏŠ·Š®—¹", "ƒ^ƒO’uŠ·ˆ—‚ªI‚í‚è‚Ü‚µ‚½B");
-		Logger.global.info("ƒ^ƒO•ÏŠ·ˆ—‚ªI—¹‚µ‚Ü‚µ‚½B");
+		frame.showMessage("å¤‰æ›å®Œäº†", "ã‚¿ã‚°ç½®æ›å‡¦ç†ãŒçµ‚ã‚ã‚Šã¾ã—ãŸã€‚");
+		Logger.global.info("ã‚¿ã‚°å¤‰æ›å‡¦ç†ãŒçµ‚äº†ã—ã¾ã—ãŸã€‚");
 		setDropStop(false);
 	}
 
@@ -147,8 +147,8 @@ public class Main {
 		SourceReader sr = new SourceReader(sourceFile, charset);
 		String startTagLine = getStartTagString();
 		if (startTagLine == null) {
-			Logger.global.severe("w’è‚³‚ê‚½ƒGƒ“ƒR[ƒh'" + charset.name() + "'‚Å‚ÍAInDesignŠJnƒ^ƒO‚ªì‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B");
-			throw new Exception("w’è‚³‚ê‚½•¶šƒR[ƒh‚ÍA‚±‚ÌƒvƒƒOƒ‰ƒ€‚ªƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚¹‚ñB\nInDesign‚ÌŠJnƒ^ƒO‚ªì‚ê‚Ü‚¹‚ñB");
+			Logger.global.severe("æŒ‡å®šã•ã‚ŒãŸã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰'" + charset.name() + "'ã§ã¯ã€InDesigné–‹å§‹ã‚¿ã‚°ãŒä½œã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚");
+			throw new Exception("æŒ‡å®šã•ã‚ŒãŸæ–‡å­—ã‚³ãƒ¼ãƒ‰ã¯ã€ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã›ã‚“ã€‚\nInDesignã®é–‹å§‹ã‚¿ã‚°ãŒä½œã‚Œã¾ã›ã‚“ã€‚");
 		}
 		App.out = new Printer(getResultFilePath(sourceFile), charset);
 		App.out.setLineFeedCode(lineFeedCode);

@@ -22,13 +22,13 @@ public class SourceParserImpl implements SourceParser {
 			Logger.global.severe(ioe.getMessage());
 			throw ioe;
 		} catch (SourceParserException spe) {
-			Logger.global.severe("Œ´eƒtƒ@ƒCƒ‹‚Ì‰ğÍ’†‚ÉƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B\ns”Ô†: " + lineNumber);
+			Logger.global.severe("åŸç¨¿ãƒ•ã‚¡ã‚¤ãƒ«ã®è§£æä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚\nè¡Œç•ªå·: " + lineNumber);
 			throw spe;
 		}
 	}
 	
 	/*
-	 * <, > ‚ğƒGƒXƒP[ƒv
+	 * <, > ã‚’ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—
 	 */
 	private String getTagEscapedLine(String line) {
 		line = line.replaceAll("([<>])", "<005C>$1");

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 /**
- * �o�͎��ɍs���ׂ�����̗\�����t���A���s���邽�߂̃I�u�W�F�N�g�ł��B
+ * 出力時に行うべき操作の予約を受付け、実行するためのオブジェクトです。
  */
 public class PrintController {
 	private LinkedList<String> cmds = null;
@@ -15,21 +15,21 @@ public class PrintController {
 	}
 
 	/**
-	 * �o�͎��ɍs���ׂ������ǉ����܂��B
+	 * 出力時に行うべき操作を追加します。
 	 * <br/>
-	 * ����́A����̃R�}���h�𔭍s���ė\�񂵂܂��B
-	 * ���p�ł���R�}���h�́A
+	 * 操作は、特定のコマンドを発行して予約します。
+	 * 利用できるコマンドは、
 	 * <ul><li>print</li>
 	 * <li>remove last para</li>
-	 * <li>���̑�</li></ul>
-	 * �� 3 ��ނł��B<br/>
-	 * �uprint�v�̓t�@�C���ւ̏o�͂��s���܂��B
-	 * ����́A���ݏ������̍s���A�R�}���h���s���̏�Ԃŏo�͂���Ƃ������Ƃł͂���܂���B
-	 * �t�@�C���ւ̏o�͂́A���������ׂĊ��������i�K�ōs���܂��B<br/>
-	 * �uremove last para�v�́A���݂̒i���X�^�C���̂����A�Ō�̂��̂��폜���܂��B<br/>
-	 * ���̑��̃R�}���h�͌����I�Ɏg���܂��񂪁A�Ӑ}�I�ɉ����o�͂��������Ȃ��ꍇ�Ɏg�����Ƃ��ł��܂��B
-	 * �R�}���h���^�C�|����ƁA�o�͂���Ȃ��Ȃ邱�Ƃ�����܂��B<br/>
-	 * ���̃��\�b�h�́A�^�C�|���̂��߂ɗ�O�𑗏o���邱�Ƃ͂���܂���B���̃R�}���h�͒P���ɖ�������܂��B
+	 * <li>その他</li></ul>
+	 * の 3 種類です。<br/>
+	 * 「print」はファイルへの出力を行います。
+	 * これは、現在処理中の行を、コマンド発行時の状態で出力するということではありません。
+	 * ファイルへの出力は、処理がすべて完了した段階で行われます。<br/>
+	 * 「remove last para」は、現在の段落スタイルのうち、最後のものを削除します。<br/>
+	 * その他のコマンドは原則的に使いませんが、意図的に何も出力させたくない場合に使うこともできます。
+	 * コマンドをタイポすると、出力されなくなることがあります。<br/>
+	 * このメソッドは、タイポ等のために例外を送出することはありません。そのコマンドは単純に無視されます。
 	 * 
 	 * @param command 
 	 */
@@ -38,20 +38,20 @@ public class PrintController {
 	}
 
 	/**
-	 * �o�͎��̑��삪�����\�񂳂�Ă��邩�ǂ�����Ԃ��܂��B
+	 * 出力時の操作が何か予約されているかどうかを返します。
 	 * <br/>
-	 * ���炩�̑��삪�\�񂳂�Ă���� true ��Ԃ��܂��B
-	 * @return ���삪�\�񂳂�Ă��邩�ǂ���
+	 * 何らかの操作が予約されていれば true を返します。
+	 * @return 操作が予約されているかどうか
 	 */
 	public boolean hasCommands() {
 		return ! cmds.isEmpty();
 	}
 
 	/**
-	 * �\�񂳂�Ă��鑀������s���܂��B
-	 * @param line �o�͂��镶����iprint �R�}���h�����s����Ă���ꍇ�j
-	 * @throws IOException I/O �֌W�̗�O�����������ꍇ
-	 * @throws SourceParserException�@���e�t�@�C���̉�͂Ɋ֌W�����O�����������ꍇ 
+	 * 予約されている操作を実行します。
+	 * @param line 出力する文字列（print コマンドが発行されている場合）
+	 * @throws IOException I/O 関係の例外が発生した場合
+	 * @throws SourceParserException　原稿ファイルの解析に関係する例外が発生した場合 
 	 */
 	public void execute(String line) throws IOException, SourceParserException {
 		ListIterator<String> it = cmds.listIterator();

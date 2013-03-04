@@ -6,17 +6,17 @@ import org.mozilla.javascript.ImporterTopLevel;
 import org.mozilla.javascript.Scriptable;
 
 /**
- * <p>Rhino �̃X�N���v�g�����s���邽�߂̃N���X�ł��B</p>
+ * <p>Rhino のスクリプトを実行するためのクラスです。</p>
  */
 public class RhinoLauncher {
 	private StringBuilder preCode = new StringBuilder();
 	
 	/**
-	 * <p>�X�N���v�g�{�̂����s����O�Ƀ��[�h���Ă����ׂ��X�N���v�g���w�肵�܂��B</p>
-	 * <p>�X�N���v�g�̎��s�́A<code>launch</code> ���\�b�h�ōs���܂��B
-	 * �����Ŏw�肳�ꂽ�X�N�v���g�́A<code>launch</code> ���\�b�h�̒��ŁA
-	 * �{�̂̃X�N���v�g�ɐ旧���Ď��s����܂��B</p>
-	 * @param code ���炩���߃��[�h����X�N���v�g
+	 * <p>スクリプト本体を実行する前にロードしておくべきスクリプトを指定します。</p>
+	 * <p>スクリプトの実行は、<code>launch</code> メソッドで行います。
+	 * ここで指定されたスクプリトは、<code>launch</code> メソッドの中で、
+	 * 本体のスクリプトに先立って実行されます。</p>
+	 * @param code あらかじめロードするスクリプト
 	 */
 	public void addPreCode(String code) {
 		preCode.append(code + "\n");
@@ -35,10 +35,10 @@ public class RhinoLauncher {
 	}
 
 	/**
-	 * <p>�����ŗ^����ꂽ�X�N���v�g�� Rhino �̏����n�ɓn���Ď��s���A���̏������ʂ𕶎���Ƃ��ĕԂ��܂��B</p>
-	 * @param code ���s����X�N���v�g
-	 * @return ��������
-	 * @throws Exception �X�N���v�g�̏������ɃG���[�����������ꍇ
+	 * <p>引数で与えられたスクリプトを Rhino の処理系に渡して実行し、その処理結果を文字列として返します。</p>
+	 * @param code 実行するスクリプト
+	 * @return 処理結果
+	 * @throws Exception スクリプトの処理中にエラーが発生した場合
 	 */
 	public String launch(String code) throws Exception {
 		Context cx = new ContextFactory().enterContext();

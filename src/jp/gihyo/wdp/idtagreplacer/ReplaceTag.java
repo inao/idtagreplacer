@@ -1,26 +1,26 @@
 package jp.gihyo.wdp.idtagreplacer;
 
 /**
- * <p>ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İ‚Ü‚ê‚½A©—R’uŠ·İ’è‚Ì’uŠ·Œã‚Ì“à—e‚ğ•Û‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX‚Å‚·B</p>
- * <p><code>ParagraphTag</code> ‚â <code>CharacterTag</code> ‚É‡‚í‚¹‚ÄA
- * <code>ReplaceSign</code> ‚Æ‘Î‚É‚È‚é‚æ‚¤‚Éì‚ç‚ê‚Ä‚¢‚Ü‚·‚ªA‹@”\“I‚É‚Í
- * <code>ReplaceSign</code> ‚Æ•ª‚¯‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB</p>
- * <p>‚±‚ÌƒIƒuƒWƒFƒNƒg‚Ì“®ì‚ÍA‚²‚­’Pƒ‚Èƒr[ƒ“‚Æ“¯—l‚Å‚·B</p>
+ * <p>ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã¾ã‚ŒãŸã€è‡ªç”±ç½®æ›è¨­å®šã®ç½®æ›å¾Œã®å†…å®¹ã‚’ä¿æŒã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚</p>
+ * <p><code>ParagraphTag</code> ã‚„ <code>CharacterTag</code> ã«åˆã‚ã›ã¦ã€
+ * <code>ReplaceSign</code> ã¨å¯¾ã«ãªã‚‹ã‚ˆã†ã«ä½œã‚‰ã‚Œã¦ã„ã¾ã™ãŒã€æ©Ÿèƒ½çš„ã«ã¯
+ * <code>ReplaceSign</code> ã¨åˆ†ã‘ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚</p>
+ * <p>ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å‹•ä½œã¯ã€ã”ãå˜ç´”ãªãƒ“ãƒ¼ãƒ³ã¨åŒæ§˜ã§ã™ã€‚</p>
  */
 public class ReplaceTag {
 	private String replacement = null;
 	
 	/**
-	 * ’uŠ·Œã‚Ìî•ñ‚ğŠÇ—‚·‚éƒIƒuƒWƒFƒNƒg‚ğ¶¬‚µ‚Ü‚·B
-	 * @param replacement ’uŠ·Œã‚Ì•¶š—ñ
+	 * ç½®æ›å¾Œã®æƒ…å ±ã‚’ç®¡ç†ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+	 * @param replacement ç½®æ›å¾Œã®æ–‡å­—åˆ—
 	 */
 	public ReplaceTag(String replacement) {
 		this.replacement = replacement;
 	}
 	
 	/**
-	 * ’uŠ·Œã‚Ì•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B
-	 * @return ’uŠ·Œã‚Ì•¶š—ñ
+	 * ç½®æ›å¾Œã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+	 * @return ç½®æ›å¾Œã®æ–‡å­—åˆ—
 	 */
 	public String getReplacement() {
 		return replacement;

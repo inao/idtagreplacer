@@ -3,7 +3,7 @@ package jp.gihyo.wdp.idtagreplacer;
 import java.io.IOException;
 
 /**
- * ’i—‚Ì•ÒW‹L†‚Ìî•ñ‚ğŠi”[‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX‚ÉAŠî–{‚Æ‚È‚éÀ‘•‚ğ’ñ‹Ÿ‚·‚é’ŠÛƒNƒ‰ƒX‚Å‚·B
+ * æ®µè½ã®ç·¨é›†è¨˜å·ã®æƒ…å ±ã‚’æ ¼ç´ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã«ã€åŸºæœ¬ã¨ãªã‚‹å®Ÿè£…ã‚’æä¾›ã™ã‚‹æŠ½è±¡ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  */
 public abstract class ParagraphSign {
 
@@ -12,9 +12,9 @@ public abstract class ParagraphSign {
 	protected ParagraphTag tag = null;
 
 	/**
-	 * ŠJn‹L†‚¾‚¯‚ğ‚Â’i—‹L†ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚µ‚Ü‚·B
-	 * @param sign ŠJn‹L†
-	 * @param tag ’i—ƒ^ƒO
+	 * é–‹å§‹è¨˜å·ã ã‘ã‚’æŒã¤æ®µè½è¨˜å·ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+	 * @param sign é–‹å§‹è¨˜å·
+	 * @param tag æ®µè½ã‚¿ã‚°
 	 */
 	public ParagraphSign(String sign, ParagraphTag tag) {
 		this.startSign = sign;
@@ -22,10 +22,10 @@ public abstract class ParagraphSign {
 	}
 	
 	/**
-	 * @ŠJn‹L†‚ÆI—¹‹L†‚ğ‚Â’i—‹L†ƒIƒuƒWƒFƒNƒg‚ğ¶¬‚µ‚Ü‚·B
-	 * @param startSign ŠJn‹L†
-	 * @param endSign I—¹‹L†
-	 * @param tag ’i—ƒ^ƒO
+	 * ã€€é–‹å§‹è¨˜å·ã¨çµ‚äº†è¨˜å·ã‚’æŒã¤æ®µè½è¨˜å·ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+	 * @param startSign é–‹å§‹è¨˜å·
+	 * @param endSign çµ‚äº†è¨˜å·
+	 * @param tag æ®µè½ã‚¿ã‚°
 	 */
 	public ParagraphSign(String startSign, String endSign, ParagraphTag tag) {
 		this.startSign = startSign;
@@ -34,19 +34,19 @@ public abstract class ParagraphSign {
 	}
 
 	/**
-	 * I—¹‹L†‚ğ‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ğ•Ô‚µ‚Ü‚·B
-	 * @return I—¹‹L†‚ğ‚Á‚Ä‚¢‚é‚È‚ç true
+	 * çµ‚äº†è¨˜å·ã‚’æŒã£ã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’è¿”ã—ã¾ã™ã€‚
+	 * @return çµ‚äº†è¨˜å·ã‚’æŒã£ã¦ã„ã‚‹ãªã‚‰ true
 	 */
 	protected boolean hasEndSign() {
 		return endSign != null;
 	}
 
 	/**
-	 * ‹L†‚ğƒ^ƒO‚É•ÏŠ·‚µ‚Ä‘ÎÛ‚Ìs‚ğo—Í‚µ‚Ü‚·B
-	 * @param line ˆ—‘ÎÛ‚Ìs
-	 * @return •ÏŠ·‚ğs‚Á‚Äo—Í‚µ‚½ê‡‚Í true
-	 * @throws IOException o—Í‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
-	 * @throws SourceParserException ƒ^ƒO•ÏŠ·‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
+	 * è¨˜å·ã‚’ã‚¿ã‚°ã«å¤‰æ›ã—ã¦å¯¾è±¡ã®è¡Œã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
+	 * @param line å‡¦ç†å¯¾è±¡ã®è¡Œ
+	 * @return å¤‰æ›ã‚’è¡Œã£ã¦å‡ºåŠ›ã—ãŸå ´åˆã¯ true
+	 * @throws IOException å‡ºåŠ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
+	 * @throws SourceParserException ã‚¿ã‚°å¤‰æ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
 	 */
 	public String convertSign(String line) throws IOException, SourceParserException {
 
@@ -70,20 +70,20 @@ public abstract class ParagraphSign {
 	}
 
 	/**
-	 * ‚±‚Ìƒƒ\ƒbƒh‚ÍAˆ—‘ÎÛ‚Ìs‚ÉŠJn‹L†‚ªŒ©‚Â‚©‚Á‚½ê‡‚ÉconvertSignƒƒ\ƒbƒh‚©‚çŒÄ‚Ño‚³‚ê‚Ü‚·B
-	 * ‚±‚±‚Å‹ï‘Ì“I‚È•ÏŠ·ˆ—‚ªÀs‚³‚ê‚Ü‚·B
-	 * @param line ˆ—‘ÎÛ‚Ìs
-	 * @throws IOException o—Í‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
-	 * @throws SourceParserException ƒ^ƒO•ÏŠ·‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
+	 * ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€å‡¦ç†å¯¾è±¡ã®è¡Œã«é–‹å§‹è¨˜å·ãŒè¦‹ã¤ã‹ã£ãŸå ´åˆã«convertSignãƒ¡ã‚½ãƒƒãƒ‰ã‹ã‚‰å‘¼ã³å‡ºã•ã‚Œã¾ã™ã€‚
+	 * ã“ã“ã§å…·ä½“çš„ãªå¤‰æ›å‡¦ç†ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚
+	 * @param line å‡¦ç†å¯¾è±¡ã®è¡Œ
+	 * @throws IOException å‡ºåŠ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
+	 * @throws SourceParserException ã‚¿ã‚°å¤‰æ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
 	 */
 	protected abstract String whenStartSignMuches(String line) throws IOException, SourceParserException;
 	
 	/**
-	 * ‚±‚Ìƒƒ\ƒbƒh‚ÍAˆ—‘ÎÛ‚Ìs‚ÉI—¹‹L†‚ªŒ©‚Â‚©‚Á‚½ê‡‚ÉconvertSignƒƒ\ƒbƒh‚©‚çŒÄ‚Ño‚³‚ê‚Ü‚·B
-	 * ‚±‚±‚Å‹ï‘Ì“I‚Èˆ—‚ªÀs‚³‚ê‚Ü‚·B
-	 * @param line ˆ—‘ÎÛ‚Ìs
-	 * @throws IOException o—Í‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
-	 * @throws SourceParserException ƒ^ƒO•ÏŠ·‚ÉƒGƒ‰[‚ª‹N‚±‚Á‚½ê‡
+	 * ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€å‡¦ç†å¯¾è±¡ã®è¡Œã«çµ‚äº†è¨˜å·ãŒè¦‹ã¤ã‹ã£ãŸå ´åˆã«convertSignãƒ¡ã‚½ãƒƒãƒ‰ã‹ã‚‰å‘¼ã³å‡ºã•ã‚Œã¾ã™ã€‚
+	 * ã“ã“ã§å…·ä½“çš„ãªå‡¦ç†ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚
+	 * @param line å‡¦ç†å¯¾è±¡ã®è¡Œ
+	 * @throws IOException å‡ºåŠ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
+	 * @throws SourceParserException ã‚¿ã‚°å¤‰æ›æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã£ãŸå ´åˆ
 	 */
 	protected abstract String whenEndSignMuches(String line) throws IOException, SourceParserException;
 }

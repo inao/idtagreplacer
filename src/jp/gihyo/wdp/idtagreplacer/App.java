@@ -8,36 +8,36 @@ public class App {
 	private static App instance = new App();
 	
 	/**
-	 * �A�v���P�[�V���������p����o�͗p�I�u�W�F�N�g��ێ����܂��B
+	 * アプリケーションが利用する出力用オブジェクトを保持します。
 	 */
 	public static Printer out = null;
 	
 	/**
-	 * ���ݗL���Ȓi���^�O��ێ����܂��B
-	 * ����̓��X�g�Ƃ��Ď�������Ă��܂����A����A�P���ȃX�^�b�N�̂悤�ɓ��삵�Ă��܂��B
-	 * �A�v���P�[�V�����͋N�����A�^�O�ݒ�t�@�C����ǂݍ��񂾍ۂɁA
-	 * �܂����̃��X�g�Ɂu�f�t�H���g�̒i���X�^�C���v��o�^���܂��B
-	 * ���̌�A�����Ώۂ̃e�L�X�g�t�@�C����ǂݍ��݂Ȃ���A
-	 * �i���̊J�n�L�����o�����邽�тɁA���̃��X�g�ɑΉ�����i���X�^�C����push���A
-	 * �I���L�����o�����邽�тɁApop���܂��B
+	 * 現在有効な段落タグを保持します。
+	 * これはリストとして実装されていますが、現状、単純なスタックのように動作しています。
+	 * アプリケーションは起動時、タグ設定ファイルを読み込んだ際に、
+	 * まずこのリストに「デフォルトの段落スタイル」を登録します。
+	 * その後、処理対象のテキストファイルを読み込みながら、
+	 * 段落の開始記号が出現するたびに、このリストに対応する段落スタイルをpushし、
+	 * 終了記号が出現するたびに、popします。
 	 */
 	private LinkedList<ParagraphTag> activeParagraphTag = null;
 	
 	/**
-	 * �i���ҏW�L���̃��X�g��ێ����܂��B
-	 * �^�O�ݒ�t�@�C���ɋL�q���ꂽ���e���A�p�[�T��ʂ��Ă����Ɋi�[����܂��B
+	 * 段落編集記号のリストを保持します。
+	 * タグ設定ファイルに記述された内容が、パーサを通じてここに格納されます。
 	 */
 	private LinkedList<ParagraphSign> paragraphSigns = null;
 	
 	/**
-	 * �����ҏW�L���̃��X�g��ێ����܂��B
-	 * �^�O�ݒ�t�@�C���ɋL�q���ꂽ���e���A�p�[�T��ʂ��Ă����Ɋi�[����܂��B
+	 * 文字編集記号のリストを保持します。
+	 * タグ設定ファイルに記述された内容が、パーサを通じてここに格納されます。
 	 */
 	private LinkedList<CharacterSign> characterSigns = null;
 	
 	/**
-	 * ���R�u���ҏW�L���̃��X�g��ێ����܂��B
-	 * �^�O�ݒ�t�@�C���ɋL�q���ꂽ���e���A�p�[�T��ʂ��Ă����Ɋi�[����܂��B
+	 * 自由置換編集記号のリストを保持します。
+	 * タグ設定ファイルに記述された内容が、パーサを通じてここに格納されます。
 	 */
 	private LinkedList<ReplaceSign> replaceSigns = null;
 	
@@ -54,82 +54,82 @@ public class App {
 	}
 	
 	/**
-	 * ���݂̒i���X�^�C���̏������ׂăN���A���܂��B
+	 * 現在の段落スタイルの情報をすべてクリアします。
 	 * <br/>
-	 * �i���X�^�C���̊���l���܂߁A���ׂăN���A���Ă��܂��܂��B���ӁB
+	 * 段落スタイルの既定値も含め、すべてクリアしてしまいます。注意。
 	 */
 	public void cleanupActiveParagraphTag() {
 		activeParagraphTag = new LinkedList<ParagraphTag>() {
 			private static final long serialVersionUID = 1925385660123868542L;
 
 			public boolean add(ParagraphTag o) {
-				Logger.global.info("���݂̒i���^�O�Ƃ��āA'" + o.getTagName() + "'���o�^����܂����B");
+				Logger.global.info("現在の段落タグとして、'" + o.getTagName() + "'が登録されました。");
 				return super.add(o);
 			}
 			
 			public ParagraphTag removeLast() throws NoSuchElementException {
 				ParagraphTag ret = super.removeLast();
-				Logger.global.info("���݂̒i���^�O����'" + ret.getTagName() + "'����菜���܂����B");
+				Logger.global.info("現在の段落タグから'" + ret.getTagName() + "'を取り除きました。");
 				return ret;
 			}
 		};
 	}
 	
 	/**
-	 * ���݂̒i���X�^�C�������X�g�ŕԂ��܂��B
+	 * 現在の段落スタイルをリストで返します。
 	 * <br/>
-	 * ���̃v���O�����ł́A�i���X�^�C�����l�X�g�\�ɂ��Ă��܂��B
-	 * ����́A�o�������i���X�^�C�������X�g�i�����X�^�b�N�Ƃ��ė��p����Ă���j�ŕێ����邱�ƂŎ������Ă��܂��B
-	 * ���̃��\�b�h�́A���̃��X�g��Ԃ��܂��B
+	 * このプログラムでは、段落スタイルをネスト可能にしています。
+	 * これは、出現した段落スタイルをリスト（実質スタックとして利用されている）で保持することで実現しています。
+	 * このメソッドは、そのリストを返します。
 	 * 
-	 * @return ���݂̒i���X�^�C��
+	 * @return 現在の段落スタイル
 	 */
 	public LinkedList<ParagraphTag> getActiveParagraphTag() {
 		return activeParagraphTag;
 	}
 	
 	/**
-	 * �ݒ�t�@�C������ǂݍ��񂾁A�i���ҏW�L���̑S�������X�g�ŕԂ��܂��B
-	 * @return �i���ҏW�L���̑S���
+	 * 設定ファイルから読み込んだ、段落編集記号の全情報をリストで返します。
+	 * @return 段落編集記号の全情報
 	 */
 	public LinkedList<ParagraphSign> getParagraphSigns() {
 		return paragraphSigns;
 	}
 	
 	/**
-	 * �ݒ�t�@�C������ǂݍ��񂾁A�����ҏW�L���̑S�������X�g�ŕԂ��܂��B
-	 * @return �����ҏW�L���̑S���
+	 * 設定ファイルから読み込んだ、文字編集記号の全情報をリストで返します。
+	 * @return 文字編集記号の全情報
 	 */
 	public LinkedList<CharacterSign> getCharacterSigns() {
 		return characterSigns;
 	}
 
 	/**
-	 * �ݒ�t�@�C������ǂݍ��񂾁A���R�u���ݒ�̑S�������X�g�ŕԂ��܂��B
-	 * @return ���R�u���ݒ�̑S���
+	 * 設定ファイルから読み込んだ、自由置換設定の全情報をリストで返します。
+	 * @return 自由置換設定の全情報
 	 */
 	public LinkedList<ReplaceSign> getReplaceSigns() {
 		return replaceSigns;
 	}
 	
 	/**
-	 * �o�͎��̐���I�u�W�F�N�g��V���ɍ쐬���܂��B
+	 * 出力時の制御オブジェクトを新たに作成します。
 	 */
 	public void makeNewPrintController() {
 		controller = new PrintController();
 	}
 	
 	/**
-	 * ���ݎg���Ă���A�o�͎��̐���I�u�W�F�N�g��Ԃ��܂��B
-	 * @return �o�͎��̐���I�u�W�F�N�g
+	 * 現在使われている、出力時の制御オブジェクトを返します。
+	 * @return 出力時の制御オブジェクト
 	 */
 	public PrintController getPrintController() {
 		return controller;
 	}
 	
 	/**
-	 * ���̃N���X�̃C���X�^���X��Ԃ��܂��B
-	 * @return ���̃N���X�̃C���X�^���X
+	 * このクラスのインスタンスを返します。
+	 * @return このクラスのインスタンス
 	 */
 	public static App getInstance() {
 		if (instance == null) instance = new App();

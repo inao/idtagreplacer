@@ -12,13 +12,13 @@ public class SimpleTagconfParserTest {
 	ParagraphSign pl = null;
 	
 	@Before public void
-	_ƒZƒbƒgƒAƒbƒv
+	_ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 	() {
 		parser = new SimpleTagconfParser();
 	}
 	
 	@Test public void
-	•’Ê‚Ì‹Lq‚ª³‚µ‚­ƒp[ƒX‚Å‚«‚é‚±‚Æ_s‚Ìİ’è 
+	æ™®é€šã®è¨˜è¿°ãŒæ­£ã—ããƒ‘ãƒ¼ã‚¹ã§ãã‚‹ã“ã¨_è¡Œã®è¨­å®š 
 	() throws TagconfException {
 		paraconf = "start_sign   end_sign:style_name";
 		parser.parseParaSetting(paraconf);
@@ -27,23 +27,23 @@ public class SimpleTagconfParserTest {
 		assertTrue(pl.endSign.equals("end_sign"));
 		assertTrue(pl.tag.getTagName().equals("style_name"));
 		
-		paraconf = "ŠJn‹L†\t\tI—¹‹L†\t\t:ƒXƒ^ƒCƒ‹–¼";
+		paraconf = "é–‹å§‹è¨˜å·\t\tçµ‚äº†è¨˜å·\t\t:ã‚¹ã‚¿ã‚¤ãƒ«å";
 		parser.parseParaSetting(paraconf);
 		pl = App.getInstance().getParagraphSigns().getLast();
-		assertTrue(pl.startSign.equals("ŠJn‹L†"));
-		assertTrue(pl.endSign.equals("I—¹‹L†"));
-		assertTrue(pl.tag.getTagName().equals("ƒXƒ^ƒCƒ‹–¼"));
+		assertTrue(pl.startSign.equals("é–‹å§‹è¨˜å·"));
+		assertTrue(pl.endSign.equals("çµ‚äº†è¨˜å·"));
+		assertTrue(pl.tag.getTagName().equals("ã‚¹ã‚¿ã‚¤ãƒ«å"));
 		
-		paraconf = "s“ª‹L† : ƒXƒ^ƒCƒ‹–¼";
+		paraconf = "è¡Œé ­è¨˜å· : ã‚¹ã‚¿ã‚¤ãƒ«å";
 		parser.parseParaSetting(paraconf);
 		pl = App.getInstance().getParagraphSigns().getLast();
-		assertTrue(pl.startSign.equals("s“ª‹L†"));
+		assertTrue(pl.startSign.equals("è¡Œé ­è¨˜å·"));
 		assertTrue(pl.endSign == null);
-		assertTrue(pl.tag.getTagName().equals("ƒXƒ^ƒCƒ‹–¼"));
+		assertTrue(pl.tag.getTagName().equals("ã‚¹ã‚¿ã‚¤ãƒ«å"));
 	}
 	
 	@Test public void
-	‹ós‚Í–³‹‚³‚ê‚é‚¾‚¯‚Å—áŠO‚ğ‘—o‚µ‚È‚¢‚±‚Æ
+	ç©ºè¡Œã¯ç„¡è¦–ã•ã‚Œã‚‹ã ã‘ã§ä¾‹å¤–ã‚’é€å‡ºã—ãªã„ã“ã¨
 	() throws TagconfException {
 		paraconf = "";
 		parser.parseParaSetting(paraconf);
@@ -56,12 +56,12 @@ public class SimpleTagconfParserTest {
 	}
 	
 	@Test public void
-	ƒRƒƒ“‚ª‚È‚¢ê‡‚Í—áŠO‚ğ‘—o‚·‚é‚±‚Æ
+	ã‚³ãƒ­ãƒ³ãŒãªã„å ´åˆã¯ä¾‹å¤–ã‚’é€å‡ºã™ã‚‹ã“ã¨
 	() {
-		paraconf = "s“ª‹L†  ƒXƒ^ƒCƒ‹–¼";
+		paraconf = "è¡Œé ­è¨˜å·  ã‚¹ã‚¿ã‚¤ãƒ«å";
 		try {
 			parser.parseParaSetting(paraconf);
-			fail("ƒGƒ‰[‚ª‘—o‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½");
+			fail("ã‚¨ãƒ©ãƒ¼ãŒé€å‡ºã•ã‚Œã¾ã›ã‚“ã§ã—ãŸ");
 		} catch (TagconfException e) {
 			System.out.println(e.getMessage());
 		}

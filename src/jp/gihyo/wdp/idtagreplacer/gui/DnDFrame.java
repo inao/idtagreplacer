@@ -8,8 +8,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 
 /**
- * これは、アプリケーションのメインウィンドウです。
- * ウィンドウの中身は、MainPanel オブジェクトです。
+ * 縺薙ｌ縺ｯ縲√い繝励Μ繧ｱ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ繝｡繧､繝ｳ繧ｦ繧｣繝ｳ繝峨え縺ｧ縺吶�
+ * 繧ｦ繧｣繝ｳ繝峨え縺ｮ荳ｭ霄ｫ縺ｯ縲｀ainPanel 繧ｪ繝悶ず繧ｧ繧ｯ繝医〒縺吶�
  */
 class DnDFrame implements MainFrame {
 	private String caption = null;
@@ -57,7 +57,7 @@ class DnDFrame implements MainFrame {
 	 * @see jp.gihyo.wdp.idtagreplacer.gui.MainFrame#showErrorMessage(java.lang.String)
 	 */
 	public void showErrorMessage(String message) {
-		MessageThread t = new MessageThread("エラー", message, JOptionPane.ERROR_MESSAGE);
+		MessageThread t = new MessageThread("繧ｨ繝ｩ繝ｼ", message, JOptionPane.ERROR_MESSAGE);
 		SwingUtilities.invokeLater(t);
 	}
 	

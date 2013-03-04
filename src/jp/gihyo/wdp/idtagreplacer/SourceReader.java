@@ -9,9 +9,9 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 
 /**
- * ƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚Ş‚½‚ß‚ÌƒNƒ‰ƒX‚Å‚·B
- * <code>readWithParser</code> ƒƒ\ƒbƒh‚Åƒp[ƒTƒNƒ‰ƒX‚ğŒÄ‚Ñ‚İA
- * ƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İ‚ñ‚¾“à—e‚ğˆês‚¸‚Âƒp[ƒT‚É“n‚µ‚Ü‚·B 
+ * ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+ * <code>readWithParser</code> ãƒ¡ã‚½ãƒƒãƒ‰ã§ãƒ‘ãƒ¼ã‚µã‚¯ãƒ©ã‚¹ã‚’å‘¼ã³è¾¼ã¿ã€
+ * ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã‚“ã å†…å®¹ã‚’ä¸€è¡Œãšã¤ãƒ‘ãƒ¼ã‚µã«æ¸¡ã—ã¾ã™ã€‚ 
  */
 public class SourceReader {
 	private BufferedReader reader = null;

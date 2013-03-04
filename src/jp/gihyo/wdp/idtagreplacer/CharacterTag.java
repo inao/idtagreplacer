@@ -1,45 +1,45 @@
 package jp.gihyo.wdp.idtagreplacer;
 
 /**
- * <p>ƒ^ƒOİ’èƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İ‚Ü‚ê‚½A•¶šƒXƒ^ƒCƒ‹‚Ìî•ñ‚ğŠi”[‚·‚é‚½‚ß‚ÌƒNƒ‰ƒX‚Å‚·B</p>
- * <p>‚±‚ÌƒIƒuƒWƒFƒNƒg‚Ì“®ì‚Í‹É‚ß‚Ä’Pƒ‚Å‚·B
- * ƒIƒuƒWƒFƒNƒg‚ÍƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å“n‚³‚ê‚½ƒXƒ^ƒCƒ‹–¼‚ğ•Û‚µA
- * <code>getStartTagString</code> ƒƒ\ƒbƒh‚ªŒÄ‚Î‚ê‚½Û‚ÉA
- * <code>&lt;CharStyle: ... &gt;</code> ‚Æ‚¢‚¤ƒ^ƒO•¶š—ñ‚ğì¬‚µ‚Ä•Ô‚µ‚Ü‚·B</p>
+ * <p>ã‚¿ã‚°è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã¾ã‚ŒãŸã€æ–‡å­—ã‚¹ã‚¿ã‚¤ãƒ«ã®æƒ…å ±ã‚’æ ¼ç´ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚</p>
+ * <p>ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å‹•ä½œã¯æ¥µã‚ã¦å˜ç´”ã§ã™ã€‚
+ * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§æ¸¡ã•ã‚ŒãŸã‚¹ã‚¿ã‚¤ãƒ«åã‚’ä¿æŒã—ã€
+ * <code>getStartTagString</code> ãƒ¡ã‚½ãƒƒãƒ‰ãŒå‘¼ã°ã‚ŒãŸéš›ã«ã€
+ * <code>&lt;CharStyle: ... &gt;</code> ã¨ã„ã†ã‚¿ã‚°æ–‡å­—åˆ—ã‚’ä½œæˆã—ã¦è¿”ã—ã¾ã™ã€‚</p>
  */
 public class CharacterTag {
 	private String styleName = null;
 	
 	/**
-	 * ƒXƒ^ƒCƒ‹–¼‚ğw’è‚µ‚Ä•¶šƒ^ƒOî•ñƒIƒuƒWƒFƒNƒg‚ğì¬‚µ‚Ü‚·B
-	 * @param styleName ƒXƒ^ƒCƒ‹–¼
+	 * ã‚¹ã‚¿ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¦æ–‡å­—ã‚¿ã‚°æƒ…å ±ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã¾ã™ã€‚
+	 * @param styleName ã‚¹ã‚¿ã‚¤ãƒ«å
 	 */
 	public CharacterTag(String styleName) {
 		this.styleName = styleName;
 	}
 	
 	/**
-	 * ŠJnƒ^ƒO‚Ì•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B
-	 * ‹ï‘Ì“I‚É‚ÍA&lt;CharStyle:<i>style name</i>&gt;‚Æ‚¢‚¤•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B
-	 * <i>style name</i> ‚É‚ÍAƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å“n‚³‚ê‚½ styleName ‚ª“ü‚è‚Ü‚·B
-	 * @return ŠJnƒ^ƒO‚Ì•¶š—ñ
+	 * é–‹å§‹ã‚¿ã‚°ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+	 * å…·ä½“çš„ã«ã¯ã€&lt;CharStyle:<i>style name</i>&gt;ã¨ã„ã†æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+	 * <i>style name</i> ã«ã¯ã€ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§æ¸¡ã•ã‚ŒãŸ styleName ãŒå…¥ã‚Šã¾ã™ã€‚
+	 * @return é–‹å§‹ã‚¿ã‚°ã®æ–‡å­—åˆ—
 	 */
 	public String getStartTagString() {
 		return "<CharStyle:" + styleName + ">";
 	}
 	
 	/**
-	 * I—¹ƒ^ƒO‚Ì•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B
-	 * •Ô‚·’l‚Í &lt;CharStyle:&gt; ‚Å‚·B
-	 * @return I—¹ƒ^ƒO‚Ì•¶š—ñ‚ğ•Ô‚µ‚Ü‚·B
+	 * çµ‚äº†ã‚¿ã‚°ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+	 * è¿”ã™å€¤ã¯ &lt;CharStyle:&gt; ã§ã™ã€‚
+	 * @return çµ‚äº†ã‚¿ã‚°ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 	 */
 	public String getEndTagString() {
 		return "<CharStyle:>";
 	}
 	
 	/**
-	 * ƒIƒuƒWƒFƒNƒg‚ª•Û‚µ‚Ä‚¢‚éƒXƒ^ƒCƒ‹–¼‚ğ•Ô‚µ‚Ü‚·B
-	 * @return ƒXƒ^ƒCƒ‹–¼
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒä¿æŒã—ã¦ã„ã‚‹ã‚¹ã‚¿ã‚¤ãƒ«åã‚’è¿”ã—ã¾ã™ã€‚
+	 * @return ã‚¹ã‚¿ã‚¤ãƒ«å
 	 */
 	public String getStyleName() {
 		return styleName;
