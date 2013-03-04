@@ -49,5 +49,4 @@ https://github.com/inao/idtagreplacer/commit/0a2f57985b6416dc8e8096ee2105a763e6e
 LICENSE
 ----------
 
-* ★検討中。md2inao.plと同様にSame as Perl？　Apacheとか？　依存ライブラリはrhino
-だけっぽい★
+* Apache License 2.0
