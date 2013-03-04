@@ -44,6 +44,21 @@ https://github.com/inao/idtagreplacer/commit/0a2f57985b6416dc8e8096ee2105a763e6e
 
 どうもありがとうございます！
 
+How to build
+----------
+
+### Make artifacts
+
+```
+gradlew build
+```
+
+### Make eclipse project
+
+```
+gradlew eclipse
+```
+
 LICENSE
 ----------
 
