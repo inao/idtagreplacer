@@ -10,6 +10,14 @@ dependencies {
 	testCompile 'junit:junit:4.+'
 }
 
+jar {
+	// 依存ライブラリを実行可能Jarの中にまとめる
+	from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	manifest {
+		attributes('Main-Class': 'jp.gihyo.wdp.idtagreplacer.Main')
+	}
+}
+
 apply from: file('gradle/ide.gradle')
 
 task wrapper(type: Wrapper) { gradleVersion = '1.4' }
