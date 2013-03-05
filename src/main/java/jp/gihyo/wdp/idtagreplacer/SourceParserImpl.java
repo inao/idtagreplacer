@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 public class SourceParserImpl implements SourceParser {
 	private long lineNumber = 0;
 
+	@Override
 	public void parse(String line) throws IOException, SourceParserException {
 		lineNumber++;
 		try {
@@ -26,7 +27,7 @@ public class SourceParserImpl implements SourceParser {
 			throw spe;
 		}
 	}
-	
+
 	/*
 	 * <, > をエスケープ
 	 */
@@ -36,8 +37,8 @@ public class SourceParserImpl implements SourceParser {
 	}
 
 	private String addReplaceTag(String line) {
-		ListIterator<ReplaceSign> it = 
-			App.getInstance().getReplaceSigns().listIterator();
+		ListIterator<ReplaceSign> it = App.getInstance().getReplaceSigns()
+				.listIterator();
 		while (it.hasNext()) {
 			ReplaceSign sign = it.next();
 			ReplaceTag tag = sign.getTag();
@@ -47,26 +48,28 @@ public class SourceParserImpl implements SourceParser {
 	}
 
 	private String addCharacterTag(String line) {
-		ListIterator<CharacterSign> it = 
-			App.getInstance().getCharacterSigns().listIterator();
+		ListIterator<CharacterSign> it = App.getInstance().getCharacterSigns()
+				.listIterator();
 		while (it.hasNext()) {
 			CharacterSign sign = it.next();
 			line = sign.convertSign(line);
 		}
 		return line;
 	}
-	
-	private String addParagraphTag(String line) throws IOException, SourceParserException, NoSuchElementException {
-		ListIterator<ParagraphSign> it = 
-			App.getInstance().getParagraphSigns().listIterator();
+
+	private String addParagraphTag(String line) throws IOException,
+			SourceParserException, NoSuchElementException {
+		ListIterator<ParagraphSign> it = App.getInstance().getParagraphSigns()
+				.listIterator();
 		PrintController ctl = App.getInstance().getPrintController();
 		while (it.hasNext()) {
 			ParagraphSign sign = it.next();
-//			if (sign.convertSign(line)) return;
+			// if (sign.convertSign(line)) return;
 			line = sign.convertSign(line);
-			if (ctl.hasCommands()) return line;
+			if (ctl.hasCommands())
+				return line;
 		}
-//		App.out.println(line);
+		// App.out.println(line);
 		ctl.addCommand("print");
 		return line;
 	}

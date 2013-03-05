@@ -36,17 +36,21 @@ public class Main {
 
 	/**
 	 * アプリケーションのスタートポイントです。
-	 * @param args コマンドライン引数（利用しない）
-	 * @throws IOException 設定ファイルの読み込み時、あるいはロガー生成時に例外が発生した場合
+	 * 
+	 * @param args
+	 *            コマンドライン引数（利用しない）
+	 * @throws IOException
+	 *             設定ファイルの読み込み時、あるいはロガー生成時に例外が発生した場合
 	 */
 	public static void main(String[] args) throws IOException {
-		
+
 		// これは Mac OS X のメニューバーの表示を制御するためのコードです。
-		System.setProperty("com.apple.mrj.application.apple.menu.about.name", "InDesign Tag Replacer");
+		System.setProperty("com.apple.mrj.application.apple.menu.about.name",
+				"InDesign Tag Replacer");
 
 		setupLogger();
 		Logger.global.info("プログラムを起動しました。");
-		
+
 		Main m = new Main();
 		try {
 			m.frame = m.showGUI();
@@ -54,17 +58,21 @@ public class Main {
 			m.readProperties(m.tagconfFilePath);
 			m.setDropStop(false);
 		} catch (IOException ioe) {
-			if (m.frame != null) m.frame.showErrorMessage("tagconf.xml が見つからないか、設定内容が不正です。");
-			Logger.global.severe("tagconf.xml が見つからないか、設定内容が不正です。\n" + ioe.getMessage());
+			if (m.frame != null)
+				m.frame.showErrorMessage("tagconf.xml が見つからないか、設定内容が不正です。");
+			Logger.global.severe("tagconf.xml が見つからないか、設定内容が不正です。\n"
+					+ ioe.getMessage());
 		} catch (TagconfException tage) {
-			if (m.frame != null) m.frame.showErrorMessage(tage.getMessage());
+			if (m.frame != null)
+				m.frame.showErrorMessage(tage.getMessage());
 			Logger.global.severe(tage.getMessage());
 		}
 	}
-	
+
 	private String getTagconfFilePath(String defaultPath) {
 		File f = new File(defaultPath);
-		if (f.exists()) return defaultPath;
+		if (f.exists())
+			return defaultPath;
 		String p = frame.showFileChooser("タグ設定ファイルを選択してください。");
 		return p != null ? p : defaultPath;
 	}
@@ -74,10 +82,11 @@ public class Main {
 		handler.setFormatter(new SimpleFormatter());
 		Logger.global.addHandler(handler);
 	}
-	
-	private void readProperties(String filePath) throws IOException, TagconfException {
-		PropertiesInfo info = 
-			new PropertiesLoaderHelper().readProperties(filePath);
+
+	private void readProperties(String filePath) throws IOException,
+			TagconfException {
+		PropertiesInfo info = new PropertiesLoaderHelper()
+				.readProperties(filePath);
 		lineFeedCode = info.lineFeedCode;
 		savefileFormat = info.savefileFormat;
 		defaultParagraphName = info.defaultParagraphName;
@@ -93,20 +102,23 @@ public class Main {
 		f.show();
 		return f;
 	}
-	
+
 	private void setDropStop(boolean stop) {
 		dropStop = stop;
-		frame.setStatusMessage(dropStop ? "" : "編集記号付きテキストファイルをドラッグしてください。" );
+		frame.setStatusMessage(dropStop ? "" : "編集記号付きテキストファイルをドラッグしてください。");
 	}
-	
+
 	/**
 	 * 引数で渡された各ファイルに、タグ変換処理を施します。
-	 * @param args 処理対象となるファイルのリスト
+	 * 
+	 * @param args
+	 *            処理対象となるファイルのリスト
 	 * @throws FileNotFoundException
 	 * @throws SourceParserException
 	 * @throws Exception
 	 */
-	public void exec(List<File> args) throws FileNotFoundException, SourceParserException, Exception {
+	public void exec(List<File> args) throws FileNotFoundException,
+			SourceParserException, Exception {
 		setDropStop(true);
 		ListIterator<File> itr = args.listIterator();
 		while (itr.hasNext()) {
@@ -120,7 +132,8 @@ public class Main {
 				execEachFile(f);
 			}
 			App.getInstance().cleanupActiveParagraphTag();
-			App.getInstance().getActiveParagraphTag().add(new ParagraphTag(defaultParagraphName));
+			App.getInstance().getActiveParagraphTag()
+					.add(new ParagraphTag(defaultParagraphName));
 		}
 		frame.showMessage("変換完了", "タグ置換処理が終わりました。");
 		Logger.global.info("タグ変換処理が終了しました。");
@@ -129,45 +142,51 @@ public class Main {
 
 	private String getStartTagString() {
 		String c = charset.name();
-		if (c.equals("UTF-8")) return "<UNICODE-MAC>"; 
-		else if (c.equals("Shift_JIS")) return "<SJIS-MAC>";
-		else return null;
+		if (c.equals("UTF-8"))
+			return "<UNICODE-MAC>";
+		else if (c.equals("Shift_JIS"))
+			return "<SJIS-MAC>";
+		else
+			return null;
 	}
 
 	private File getResultFilePath(File sourceFile) {
 		String dir = sourceFile.getParent();
 		String fn = sourceFile.getName();
 		String name = fn.substring(0, fn.lastIndexOf('.'));
-		String targetPath = dir + File.separator + 
-			String.format(savefileFormat, name);
+		String targetPath = dir + File.separator
+				+ String.format(savefileFormat, name);
 		return new File(targetPath);
 	}
-	
-	private void execEachFile(File sourceFile) throws FileNotFoundException, SourceParserException, Exception {
+
+	private void execEachFile(File sourceFile) throws FileNotFoundException,
+			SourceParserException, Exception {
 		SourceReader sr = new SourceReader(sourceFile, charset);
 		String startTagLine = getStartTagString();
 		if (startTagLine == null) {
-			Logger.global.severe("指定されたエンコード'" + charset.name() + "'では、InDesign開始タグが作れませんでした。");
-			throw new Exception("指定された文字コードは、このプログラムがサポートしていません。\nInDesignの開始タグが作れません。");
+			Logger.global.severe("指定されたエンコード'" + charset.name()
+					+ "'では、InDesign開始タグが作れませんでした。");
+			throw new Exception(
+					"指定された文字コードは、このプログラムがサポートしていません。\nInDesignの開始タグが作れません。");
 		}
 		App.out = new Printer(getResultFilePath(sourceFile), charset);
 		App.out.setLineFeedCode(lineFeedCode);
 		App.out.print(startTagLine);
 		App.out.print(App.out.getLineFeedCode());
-		
+
 		SourceParser p = new SourceParserImpl();
 		sr.readWithParser(p);
 		sr.close();
 		App.out.close();
 	}
-	
+
 	class DnDDropTarget extends DropTarget {
 		private static final long serialVersionUID = -809232689759788536L;
 
 		@SuppressWarnings("unchecked")
 		@Override
 		public void drop(DropTargetDropEvent dtde) {
-			if ( ! dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+			if (!dtde.isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
 				dtde.rejectDrop();
 				return;
 			}
@@ -179,7 +198,8 @@ public class Main {
 			dtde.acceptDrop(DnDConstants.ACTION_COPY);
 			Transferable t = dtde.getTransferable();
 			try {
-				List<File> ret = (List<File>)t.getTransferData(DataFlavor.javaFileListFlavor);
+				List<File> ret = (List<File>) t
+						.getTransferData(DataFlavor.javaFileListFlavor);
 				exec(ret);
 				dtde.dropComplete(true);
 			} catch (UnsupportedFlavorException e) {

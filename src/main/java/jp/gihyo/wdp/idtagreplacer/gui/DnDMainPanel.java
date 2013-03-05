@@ -15,17 +15,19 @@ class DnDMainPanel extends MainPanel {
 	public DnDMainPanel() {
 		super(new BorderLayout());
 
-		DisplayMode m = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDisplayMode();
+		DisplayMode m = GraphicsEnvironment.getLocalGraphicsEnvironment()
+				.getDefaultScreenDevice().getDisplayMode();
 		int h = m.getHeight() / 2;
 		int w = m.getWidth() / 3;
 
 		setPreferredSize(new Dimension(w, h));
-		
+
 		statusLabel = new JLabel();
 		statusLabel.setBorder(new EmptyBorder(5, 10, 5, 10));
 		add(statusLabel, BorderLayout.SOUTH);
 	}
-	
+
+	@Override
 	public void setStatusMessage(String message) {
 		statusLabel.setText(message);
 	}
