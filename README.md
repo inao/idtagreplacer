@@ -12,6 +12,14 @@ md2inao.plとの関係や位置付け、これまでについて詳しくは、�
 
 https://gist.github.com/inao/baea09bc6fc53551886b
 
+InDesign タグ付きテキストについて
+----------
+
+ユーザーガイドです。
+以下はCS5のものなのですが、編集部で使っているのはCS3です。
+
+http://help.adobe.com/ja_JP/indesign/cs/taggedtext/indesign_cs5_taggedtext.pdf
+
 How to use
 ----------
 
