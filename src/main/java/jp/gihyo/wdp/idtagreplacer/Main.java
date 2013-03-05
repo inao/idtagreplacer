@@ -78,6 +78,10 @@ public class Main {
 	}
 
 	private static void setupLogger() throws SecurityException, IOException {
+		File logDir = new File("log");
+		if (logDir.exists() == false && logDir.mkdir() == false) {
+			throw new IOException();
+		}
 		Handler handler = new FileHandler("log/log%g.txt", 50000, 10, true);
 		handler.setFormatter(new SimpleFormatter());
 		Logger.global.addHandler(handler);
