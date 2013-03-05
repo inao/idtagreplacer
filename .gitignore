@@ -6,5 +6,6 @@ Icon
 .*
 !.travis.yml
 !.git*
+!.settings
 /bin
 /build

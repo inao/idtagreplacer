@@ -5,13 +5,14 @@ import java.util.logging.Logger;
 public class ScriptCharacterSign extends CharacterSign {
 	private String functionString = null;
 
-	public ScriptCharacterSign(String startSign, String endSign, CharacterTag tag) {
+	public ScriptCharacterSign(String startSign, String endSign,
+			CharacterTag tag) {
 		super(startSign, endSign, tag);
-		
+
 		String funcKey = tag.getStyleName().substring("!!".length());
 		functionString = getFunctionString(funcKey);
 	}
-	
+
 	private String getFunctionString(String key) {
 		PropertiesLoader p = PropertiesLoader.getInstance();
 		return p.getProperties().getProperty(key, "");
@@ -19,13 +20,14 @@ public class ScriptCharacterSign extends CharacterSign {
 
 	@Override
 	public String convertSign(String line) {
-		if (line.indexOf(startSign) == -1) return line;
+		if (line.indexOf(startSign) == -1)
+			return line;
 		if (functionString.length() == 0) {
-			Logger.global.warning("'" + startSign + "'を検出しましたが、" + 
-					"呼び出すべきスクリプトの設定が見つかりません。タグ置換処理をスキップします。");
+			Logger.global.warning("'" + startSign + "'を検出しましたが、"
+					+ "呼び出すべきスクリプトの設定が見つかりません。タグ置換処理をスキップします。");
 			return line;
 		}
-		
+
 		String tagName = tag.getStyleName().substring("!!".length());
 
 		RhinoLauncher r = new RhinoLauncher();
@@ -50,10 +52,10 @@ public class ScriptCharacterSign extends CharacterSign {
 		try {
 			ret = r.launch(functionString);
 		} catch (Exception e) {
-			Logger.global.warning("'" + tagName + "'のJavaScriptでエラーが発生しました。" +
-					"メッセージ：" + e.getMessage());
+			Logger.global.warning("'" + tagName + "'のJavaScriptでエラーが発生しました。"
+					+ "メッセージ：" + e.getMessage());
 		}
-		
+
 		return ret;
 	}
 
