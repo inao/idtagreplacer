@@ -4,5 +4,7 @@
 Icon
 ._*
 .*
+!.travis.yml
+!.git*
 /bin
 /build
