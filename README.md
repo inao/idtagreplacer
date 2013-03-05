@@ -1,4 +1,4 @@
-idtagreplacer
+idtagreplacer [![Build Status](https://travis-ci.org/inao/idtagreplacer.png)](https://travis-ci.org/inao/idtagreplacer)
 =============
 
 編集記号で書かれたテキストを、InDesignのタグ付きテキストに変換するプログラムです。
