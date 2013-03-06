@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+<!--
+【文字コード】
+入力ファイル（編集記号付きの原稿ファイルのこと）と出力ファイル（プログラムが出力するタグ付きテキストのこと）の文字コードを指定します。
+指定できるのは、Shift_JIS もしくは UTF-8 です。
+多少であれば、違う書き方でも大丈夫です。
+-->
+<entry key="エンコード">shift-jis</entry>
+
+<!--
+【出力ファイルの改行コード】
+基本的にこのままで。
+-->
+<entry key="改行コード">CR</entry>
+
+<!--
+【出力ファイルの命名書式】
+%sの部分に入力ファイルのファイル名（拡張子を除く）が入ります。
+-->
+<entry key="保存ファイル名">%s_id.txt</entry>
+
+<!--
+【デフォルトの段落スタイル名】
+-->
+<entry key="段落タグの既定値">本文</entry>
+
+<!--
+【段落スタイル】
+
+書式：
+開始記号  [終了記号] : スタイル名
+
+開始記号と終了記号の間は、任意の数のスペースもしくはタブで区切ります。
+開始記号と終了記号に挟まれた全ての段落にスタイルが適用されます。
+終了記号を省いた場合、開始記号が書かれた行だけ適用されます。
+
+開始記号は必ず行頭に記述します。
+「◆list/◆abcde」みたいな書き方も可能です。
+
+終了記号は必ず行末に書きます（行頭である必要はない）。
+文章の途中に記述しても記号としては無視されます（そのままテキストとして出力される）。
+
+開始記号、終了記号は、ともに変換後削除されます（★実際は、開始記号のみの行は空行が残る。終了記号のみの行は削除される★）。
+
+【記法まとめ】
+ここまでのまとめ。下記の指定はいずれも有効です。
+ただし、ohayou(1)と(2)の場合は1行目にリストスタイルがかかった空行が残ります。
+
+◆list/◆
+ohayou(1)
+    oyasumi;
+◆/list◆
+
+◆list/◆
+ohayou(2)
+    oyasumi;◆/list◆
+
+◆list/◆ohayou(3)
+    oyasumi;
+◆/list◆
+
+◆list/◆ohayou(4)
+    oyasumi;◆/list◆
+
+段落スタイルは、次のように入れ子で指定可能です。
+
+◆column/◆
+　コラム本文コラム本文。
+◆list/◆
+ohayou()
+    oyasumi;
+◆/list◆
+　コラム本文もどる。
+◆/column◆
+
+【特殊な書き方】
+スタイル名の先頭に「!!」を置くと、同名の entry に書かれたJavaScript が実行されます。
+
+スタイル名の先頭に「!」を置くと、開始記号や終了記号は削除されずに残ります。
+
+開始記号や終了記号に「:」を使う場合は、「\」でエスケープします。
+「\」でエスケープできるのは「:」と「\」だけです。
+（「\\」は「\」に変換され、「\:」は「:」に変換されます。それ以外の単独の「\」は「\」のまま扱われるようになっています。）
+
+【禁止事項】
+スタイル名の先頭が「!」や「!!」であってはいけません。
+（「!」や「!!」はスタイル名の一部ではなく、上記の意味として解釈されます。）
+
+【注意事項】
+「!!」で別処理に飛ばしているものは、特殊文字が消えたり、変換できなかったりする（ルビ、イタリック、リストコメント、リストコメント白地黒文字）。
+
+例：
+\test ◆comment/◆test◆/comment◆★\tがタブになる★
+あ\あ\ ◆comment/◆test\◆/comment◆★\が消える★
+
+対策：
+以下のようにエスケープするか、そもそも気をつける
+\\あ ◆comment/◆test◆/comment◆★\をエスケープできる★
+-->
+<entry key="段落タグ設定"><![CDATA[
+章番号：   : !章番号・連載回数
+連載回数： : !章番号・連載回数
+タイトル： : !タイトル
+キャッチ： : !キャッチ
+
+◆lead/◆ ◆/lead◆ : リード文
+
+▼         : 見出し0.0
+■■■■■ : コラム小見出し
+■■■■   : コラムタイトル
+■■■     : 小見出し
+■■       : 中見出し
+■         : 大見出し
+
+・・                        : 箇条書き説明
+・                          : !箇条書き
+＊                          : 箇条書き2階層目
+◆箇条2◆                   : 箇条書き2階層目
+
+◆箇条◆                    : 箇条書き
+◆箇条/◆ ◆/箇条◆         : 箇条書き
+◆箇条説明◆                : 箇条書き説明
+◆箇条説明/◆ ◆/箇条説明◆ : 箇条書き説明
+
+（1）  : !箇条書き
+（2）  : !箇条書き
+（3）  : !箇条書き
+（4）  : !箇条書き
+（5）  : !箇条書き
+（6）  : !箇条書き
+（7）  : !箇条書き
+（8）  : !箇条書き
+（9）  : !箇条書き
+（10） : !箇条書き
+
+（a）  : !箇条書き
+（b）  : !箇条書き
+（c）  : !箇条書き
+（d）  : !箇条書き
+（e）  : !箇条書き
+（f）  : !箇条書き
+（g）  : !箇条書き
+
+（○1）  : !箇条書き
+（○2）  : !箇条書き
+（○3）  : !箇条書き
+（○4）  : !箇条書き
+（○5）  : !箇条書き
+（○6）  : !箇条書き
+（○7）  : !箇条書き
+（○8）  : !箇条書き
+（○9）  : !箇条書き
+（○10） : !箇条書き
+
+［1］  : !箇条書き
+［2］  : !箇条書き
+［3］  : !箇条書き
+［4］  : !箇条書き
+［5］  : !箇条書き
+［6］  : !箇条書き
+［7］  : !箇条書き
+［8］  : !箇条書き
+［9］  : !箇条書き
+
+●                        : キャプション
+
+◆table-title◆       : 表見出し行
+◆table/◆ ◆/table◆ : 表
+
+◆list◆                                : リスト
+◆list/◆ ◆/list◆                     : リスト
+◆list-b◆                              : リスト太字
+◆list-b/◆ ◆/list-b◆                 : リスト太字
+◆list-white◆                          : リスト白文字
+◆list-white/◆ ◆/list-white◆         : リスト白文字
+◆list-white-b◆                        : リスト白文字太字
+◆list-white-b/◆ ◆/list-white-b◆     : リスト白文字太字
+◆list-s/◆ ◆/list-s◆                 : リスト小
+◆list-bgnocolor/◆ ◆/list-bgnocolor◆ : リスト背景色なし
+
+◆column/◆ ◆/column◆                 : コラム本文
+◆column箇条◆                          : コラム箇条書き
+◆column箇条説明◆                      : コラム箇条書き説明
+◆column箇条説明/◆ ◆/column箇条説明◆ : コラム箇条書き説明
+◆column箇条2◆                         : コラム箇条書き2階層目
+◆column1/2行間◆                       : コラム半行アキ
+
+注                        : !注釈
+編注                      : !注釈
+
+◆quote◆                 : 引用
+◆quote/◆ ◆/quote◆     : 引用
+──                      : !出典
+
+◆1/2行間◆               : 半行アキ
+=-=-=                     : 区切り線
+◆reds/◆ ◆/reds◆       : 赤字段落
+
+◆knows◆    : 理解したリスト・今わかった
+◆knowns◆   : 理解したリスト・既知
+◆unknowns◆ : 理解したリスト
+
+◆knows/◆ ◆/knows◆       : 理解したリスト・今わかった
+◆knowns/◆ ◆/knowns◆     : 理解したリスト・既知
+◆unknowns/◆ ◆/unknowns◆ : 理解したリスト
+
+]]></entry>
+<!--
+【段落設定の備忘録】
+・特殊なリストの指定
+下記書式も利用できます。
+ただし、組版時に「●」が残るので別途削除する必要があります。
+使い方は「●リスト1　XXX」のようにリストのキャプションを書けば、その次の行から「==ココマデ==」までがリストスタイルに変換されます。
+
+●リスト ==ココマデ==     : !!リスト
+-->
+
+<!--
+【文字スタイル】
+書式は「段落タグ設定」に準じますが、終了記号を省くことはできません。
+-->
+<entry key="文字タグ設定"><![CDATA[
+◆b/◆ ◆/b◆         : 太字
+◆i/◆ ◆/i◆         : !!イタリック
+◆i-j/◆ ◆/i-j◆     : イタリック（変形斜体）
+◆上付/◆ ◆/上付◆   : 上付き
+◆ルビ/◆ ◆/ルビ◆   : !!ルビ
+◆cmd/◆ ◆/cmd◆     : コマンド
+◆cmd-b/◆ ◆/cmd-b◆ : コマンド太字
+◆red/◆ ◆/red◆     : 赤字
+
+◆comment/◆ ◆/comment◆             : !!リストコメント
+◆comment-white/◆ ◆/comment-white◆ : !!リストコメント白地黒文字
+
+]]></entry>
+
+<!--
+【自由置換】
+書式：
+置換前 : 置換後
+
+置換前の文字が置換後の文字に置き換わります。
+-->
+<entry key="自由置換設定"><![CDATA[
+
+◆→◆:  <cTypeface:R-KL><cFont:A-OTF リュウミン Pr5><27A1><cTypeface:><cFont:>
+◆←◆:  <cTypeface:R-KL><cFont:A-OTF リュウミン Pr5><2B05><cTypeface:><cFont:>
+◆↑◆:  <cTypeface:R-KL><cFont:A-OTF リュウミン Pr5><2B06><cTypeface:><cFont:>
+◆↓◆:  <cTypeface:R-KL><cFont:A-OTF リュウミン Pr5><2B07><cTypeface:><cFont:>
+
+◆←→◆:  <21D4>
+
+◆＞＝◆:  <2267>
+◆＝＞◆:  <2266>
+
+F10▲          : <cFont:Key Snd Mother>*<cFont:>
+F11▲          : <cFont:Key Snd Mother>+<cFont:>
+F12▲          : <cFont:Key Snd Mother>,<cFont:>
+F1▲: <cFont:Key Snd Mother>!<cFont:>
+F2▲: <cFont:Key Snd Mother>"<cFont:>
+F3▲: <cFont:Key Snd Mother>#<cFont:>
+F4▲: <cFont:Key Snd Mother>$<cFont:>
+F5▲: <cFont:Key Snd Mother>%<cFont:>
+F6▲: <cFont:Key Snd Mother>&<cFont:>
+F7▲: <cFont:Key Snd Mother>'<cFont:>
+F8▲: <cFont:Key Snd Mother>(<cFont:>
+F9▲: <cFont:Key Snd Mother>)<cFont:>
+→▲: <cFont:Key Snd Mother>z<cFont:>
+↓▲: <cFont:Key Snd Mother>|<cFont:>
+↑▲: <cFont:Key Snd Mother>{<cFont:>
+←▲: <cFont:Key Snd Mother>y<cFont:>
+End▲          : <cFont:Key Snd Mother>n<cFont:>
+Alt▲          : <cFont:Key Snd Mother>m<cFont:>
+Ctrl▲         : <cFont:Key Snd Mother>l<cFont:>
+Control▲      : <cFont:Key Snd Mother>l<cFont:>
+Shift▲        : <cFont:Key Snd Mother>`<cFont:>
+Tab▲          : <cFont:Key Snd Mother>k<cFont:>
+Esc▲          : <cFont:Key Snd Mother>j<cFont:>
+Delete▲       : <cFont:Key Snd Mother>g<cFont:>
+Insert▲       : <cFont:Key Snd Mother>f<cFont:>
+Pause▲        : <cFont:Key Snd Mother>s<cFont:>
+Break▲        : <cFont:Key Snd Mother>e<cFont:>
+Home▲         : <cFont:Key Snd Mother>o<cFont:>
+Back Space▲   : <cFont:Key Snd Mother>p<cFont:>
+Space▲        : <cFont:Key Snd Mother>d<cFont:>
+Pgup▲         : <cFont:Key Snd Mother>c<cFont:>
+Pgdn▲         : <cFont:Key Snd Mother>b<cFont:>
+Enter▲        : <cFont:Key Mother><00A9><cFont:>
+
+<005C><▲: <cFont:Key Mother><005C><<cFont:>
+<005C>>▲: <cFont:Key Mother><005C>><cFont:>
+
+◆A：◆ : <00C4>
+◆a：◆ : <00E4>
+◆O：◆ : <00D6>
+◆o：◆ : <00F6>
+◆U：◆ : <00DC>
+◆u：◆ : <00FC>
+
+◆NOT◆ : <00AC>
+◆mid◆ : <2223>
+◆＜◆  : <27E8>
+◆＞◆  : <27E9>
+
+◆注/◆ : <cstyle:上付き><fnStart:><pstyle:注釈>
+◆/注◆ : <fnEnd:><cstyle:>
+
+◆数式上付/◆ : <cp:Superscript>
+◆/数式上付◆ : <cp:>
+◆数式下付/◆ : <cp:Subscript>
+◆/数式下付◆ : <cp:>
+
+㈱   : <3231>
+(株) : <3231>
+◆横三角◆ : <25B6>
+
+◆c◆ : <00E7>
+◆e◆ : <00E9>
+
+◆URL◆ : <CharStyle:URLなど><cNoBreak:1><202F>URL<202F><cNoBreak:><CharStyle:>
+
+◆WDB◆ : <cstyle:ストッパ>#<cstyle:>
+
+★      : <CharStyle:赤字>★<CharStyle:>
+
+□      : <CharStyle:赤字>□<CharStyle:>
+
+]]></entry>
+
+<!--
+【自由置換設定の備忘録】
+・「<005C><▲: <cFont:Key Mother><005C><<cFont:>」などの行は、「<▲」「>▲」と原稿中に書くとこれらのキーボードフォントになる設定
+・◆数式上付/◆などは、その場のフォントのままで、InDesignの機能で上付や下付にする（◆上付/◆はゴチ系のフォントになる）
+・◆A：◆などは、ウムラウト系
+・◆NOT◆は、数理論理学の否定。「を時計回りに90度回転させたような記号
+・◆mid◆は、パイプ的な見た目の関係演算子。TeXでの\mid
+・◆＜◆◆＞◆は、数学記号の<>。TeXでの\langle～\rangle
+-->
+
+<entry key="黒丸数字書式"><![CDATA[
+// 置換できるのは10までだが、フォントとしては黒丸は20まである
+format = "（%d）";
+charStyle = "丸文字";
+code = 0x2776 - 1;
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i),
+                       new ReplaceTag('<CharStyle:' + charStyle + '><' + (code + i).toString(16) + '><CharStyle:>')));
+
+  format = "（%s）";
+  chars = "abcdefghij";
+  for (var i = 0; i < chars.length; i++) {
+    var c = chars.charAt(i);
+    App.replaceSigns.add(new ReplaceSign(format.replace('%s', c),
+                         new ReplaceTag('<CharStyle:' + charStyle + '><cLigatures:0><cOTFContAlt:0><cOTFeatureList:nalt\,3>' + c + '<cLigatures:><cOTFContAlt:><cOTFeatureList:><CharStyle:>')));
+}
+
+]]></entry>
+
+<entry key="白丸数字書式"><![CDATA[
+// 置換できるのは10までだが、フォントとしては白丸は50まである
+format = "（○%d）";
+charStyle = "丸文字";
+code = 0x2460 - 1;
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i),
+                       new ReplaceTag('<CharStyle:' + charStyle + '><' + (code + i).toString(16) + '><CharStyle:>')));
+]]></entry>
+
+<entry key="黒四角数字書式"><![CDATA[
+format = "［%d］";
+for (var i = 10; i >= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i),
+    new ReplaceTag('<cTypeface:B><cFont:A-OTF ゴシックMB101 Pro><cotfcalt:0><cotfl:nalt\,7>' +
+    i + '<cTypeface:><cFont:><cotfcalt:><cotfl:>')));
+]]></entry>
+
+<entry key="アルファベット"><![CDATA[
+format = "%s▲";
+var keys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()=-^~|[]+*;:,./?_@`\"";
+for (var i = 0; i < keys.length; i++) {
+  var c = keys.charAt(i);
+  if (c == '<' || c == '>') c = '\\' + c;
+  App.replaceSigns.add(new ReplaceSign(format.replace("%s", keys.charAt(i)), new ReplaceTag('<cFont:KeyMother>' + c + '<cFont:>')));
+}
+]]></entry>
+
+<entry key="ルビ"><![CDATA[
+var sep = "◆";
+
+searchTag(function(l, m, r) {
+  var items = m.split(sep);
+  return l + '<cr:1><crstr:' + items[1] + '><cmojir:0>' + items[0] + '<cr:><crstr:><cmojir:>' + r;
+});
+]]></entry>
+
+<entry key="イタリック"><![CDATA[
+var tagWa = "イタリック（変形斜体）";
+var tagLa = "イタリック";
+
+searchTag(function(l, m, r) {
+  m = m.replace(/([a-zA-Z0-9!"#$%&'\(\)\-=\^~\\@`\[\]{};+:\*<>,\.\/\?_]+)/g, "<CharStyle:!!>$1<CharStyle:>");
+  m = m.replace(/([^a-zA-Z0-9!"#$%&'\(\)\-=\^~\\@`\[\]{};+:\*<>,\.\/\?_]+)/g, "<CharStyle:" + tagWa + ">$1<CharStyle:>");
+  m = m.replace(/<CharStyle:!!>/g, "<CharStyle:" + tagLa + ">");
+  return l + m + r;
+});
+]]></entry>
+
+<entry key="リストコメント"><![CDATA[
+searchTag(function(l, m, r) {
+  return l + '<CharStyle:' + tagName + '> ' + m + ' <CharStyle:>' + r;
+});
+]]></entry>
+
+<entry key="リストコメント白地黒文字"><![CDATA[
+searchTag(function(l, m, r) {
+  return l + '<CharStyle:' + tagName + '> ' + m + ' <CharStyle:>' + r;
+});
+]]></entry>
+
+<entry key="リスト"><![CDATA[
+function whenStartSignMuches() {
+  App.activeParagraphTag.add(new ParagraphTag("キャプション"));
+  App.printController.addCommand("print");
+  App.printController.addCommand("remove last para");
+  return targetLine;
+}
+function whenEndSignMuches() {
+  return undefined;
+}
+]]></entry>
+
+<entry key="その他自由設定"><![CDATA[
+/* ご利用にはご注意を！ */
+]]></entry>
+
+</properties>
