@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,8 +28,9 @@ public class AppTest {
 
 	String testdata;
 
-	Charset charset = null;
-	String lineFeedCode = null;
+	Charset charset;
+	String lineFeedCode;
+	String defaultParagraphName;
 
 	public AppTest(String testdata) {
 		this.testdata = testdata;
@@ -36,7 +38,7 @@ public class AppTest {
 
 	@Parameters(name = "{0}")
 	public static Collection<Object[]> generateData() {
-		return Arrays.asList(new Object[][] { { "sjis" } });
+		return Arrays.asList(new Object[][] { { "sjis" }, { "utf8" } });
 	}
 
 	@Before
@@ -46,11 +48,17 @@ public class AppTest {
 				.readProperties(filePath);
 		this.lineFeedCode = info.lineFeedCode;
 		this.charset = info.charset;
+		this.defaultParagraphName = info.defaultParagraphName;
 
 		File build = new File("build");
 		if (build.exists() == false && build.mkdir() == false) {
 			throw new AssertionError();
 		}
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		App.instance = null;
 	}
 
 	String fixture(String suffix) {
@@ -63,12 +71,13 @@ public class AppTest {
 
 	private String getStartTagString() {
 		String c = charset.name();
-		if (c.equals("UTF-8"))
+		if (c.equals("UTF-8")) {
 			return "<UNICODE-MAC>";
-		else if (c.equals("Shift_JIS"))
+		} else if (c.equals("Shift_JIS")) {
 			return "<SJIS-MAC>";
-		else
+		} else {
 			return null;
+		}
 	}
 
 	@Test
