@@ -5,7 +5,11 @@ import java.util.NoSuchElementException;
 import java.util.logging.Logger;
 
 public class App {
-	private static App instance = new App();
+
+	/**
+	 * テストの為package privateスコープにしてある。
+	 */
+	static App instance = new App();
 
 	/**
 	 * アプリケーションが利用する出力用オブジェクトを保持します。
