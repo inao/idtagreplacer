@@ -23,7 +23,7 @@ http://help.adobe.com/ja_JP/indesign/cs/taggedtext/indesign_cs5_taggedtext.pdf
 How to use
 ----------
 
-manual.pdfをご覧ください。
+http://inao.github.com/idtagreplacer/
 
 サンプル
 ----------
