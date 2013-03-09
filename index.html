@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Idtagreplacer : " />
+    <meta name="description" content="idtagreplacer ──  InDesign tag replacer : " />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Idtagreplacer</title>
+    <title>idtagreplacer ──  InDesign tag replacer</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/inao/idtagreplacer">View on GitHub</a>
 
-          <h1 id="project_title">Idtagreplacer</h1>
+          <h1 id="project_title">idtagreplacer ──  InDesign tag replacer</h1>
           <h2 id="project_tagline"></h2>
 
             <section id="downloads">
@@ -31,39 +31,629 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h1>これはなに？</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>idtagreplacerは、テキストに埋め込んだ編集記号をInDesignタグに変換するためのプログラムです。</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>■概要
+■■これはなに？
+テキストに埋め込んだ編集記号をInDesignタグに変換するためのプログラムです。
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>たとえば上記のテキストは編集記号として、</p>
 
-<h3>Designer Templates</h3>
+<ul>
+<li>■は「大見出し」</li>
+<li>■■は「中見出し」</li>
+<li>何も指定していない行は「本文」</li>
+</ul><p>という意味をそれぞれ想定しているとします。</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>通常、こうした原稿ファイルをDTPに出す場合、DTPオペレータに編集記号の意味を伝える必要があります。そしてオペレータは渡された原稿から編集記号を見付け、対応したスタイルを手作業で適用していきます。</p>
 
-<h3>Rather Drive Stick?</h3>
+<p>しかしこうした作業は機械的な単純作業であり、わざわざ人が行う価値のあるものとは言えません。人はミスもしますし。</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>idtagreplacerを使えば、編集記号とInDesignスタイルの対応を設定しておくだけで、スタイルの適用されたInDesignタグ付きテキストを生成でき、DTPで発生する単純作業を軽減できます。編集記号やInDesignスタイルの名前は設定ファイルで任意に定義できます。</p>
 
-<h3>Authors and Contributors</h3>
+<h1>実行方法</h1>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h2>どうやってインストールするの？</h2>
 
-<h3>Support or Contact</h3>
+<p>idtagreplacerはJavaのプログラムですから、<a href="http://java.com/ja/download/">Javaの実行環境</a>が必要です。Java7以降をご使用ください。</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Java実行環境が整ったら、idtagreplacerを利用したいPCにダウンロードします。必要なのは次の2つです。</p>
+
+<ul>
+<li>idtagreplacer.jar（プログラム本体）</li>
+<li>tagconf.xml（編集記号、InDesignスタイルの定義ファイル）</li>
+</ul><h2>どうやってアンインストールするの？</h2>
+
+<p>インストールしたファイル一式を削除してください。</p>
+
+<h2>どうやって実行するの？</h2>
+
+<ol>
+<li>あらかじめ自分用にtagconf.xmlを編集しておきます。</li>
+<li>idtagreplacer.jarをダブルクリックします。するとダイアログが表示されます。また、ログファイルを保存するためのlogフォルダがなければ自動で作成されます。</li>
+<li>処理したい原稿ファイルを、ダイアログにドラッグ&amp;ドロップします。</li>
+<li>すると、原稿ファイルと同じ場所に、処理結果のファイルが作成されます。</li>
+</ol><p>作成されたテキストをInDesignに読み込んでください。
+流し込みたいInDesignのフォームには、あらかじめスタイルが設定されていなければなりません。</p>
+
+<h1>試してみましょう</h1>
+
+<p>idtagprelacerを使った一連の作業を、実際に手を動かしながらなぞってみましょう。</p>
+
+<h2>サンプルファイルの準備と内容確認</h2>
+
+<p>まずInDesignのフォームを用意します。idtagreplacerを使う場合、流し込み先となるInDesignのフォームに、あらかじめスタイルが設定されている必要があります。</p>
+
+<p>そのフォームにどんなスタイルが設定されてあるかを確認するには、まずInDesignでファイルを開きます。コマンド + F11を押すと段落スタイルのウィンドウが現れ、設定済みの段落スタイルを確認できます。コマンド + Shift + F11を押すと文字スタイルのウィンドウが現れ、設定済みの文字スタイルを確認できます。</p>
+
+<p>次に、インストールしたidtagreplacerのフォルダにあるtagconf.xmlの内容を確認しましょう。このファイルには、あらかじめサンプルとなる設定情報が入力されています。テキストエディタで開いてみましょう。</p>
+
+<p>このファイルの中心部は次の2ヵ所です。</p>
+
+<pre><code>&lt;entry key="段落タグ設定"&gt;&lt;![CDATA[
+...
+]]&gt;&lt;/entry&gt;
+</code></pre>
+
+<pre><code>&lt;entry key="文字タグ設定"&gt;&lt;![CDATA[
+...
+]]&gt;&lt;/entry&gt;
+</code></pre>
+
+<p>それぞれの設定内容を見ると、各行に必ず1つ「:」があります。</p>
+
+<pre><code>■ : 大見出し
+</code></pre>
+
+<p>「:」の右側に書かれているのがInDesignのスタイル名です。これは、先ほどのInDesignのフォームに設定されているスタイル名と対応しています。</p>
+
+<p>一方「:」の左側に書かれているのが編集記号の設定情報です。つまりこの設定情報は、左側に書かれた編集記号が、右側に書かれたスタイル名に対応するというしくみになっています。</p>
+
+<p>以上で、あらかじめ用意しておくべきファイルの確認は終わりです。</p>
+
+<h2>原稿ファイルの作成</h2>
+
+<p>原稿ファイルを作成します。サンプルのtagconf.xmlで設定されているタグをそのまま使って、次のような内容のファイルを作成することにしましょう。</p>
+
+<pre><code>■はじめに
+◆b/◆idtagreplacer◆/b◆とInDesignタグの世界へようこそ！
+</code></pre>
+
+<p>ファイルは（サンプルのtagconf.xmlの設定に従って）Shift-JISで保存します。ファイル名は、source.txtとしておきましょう。</p>
+
+<h2>InDesignタグ付きテキストへの変換</h2>
+
+<p>作成した原稿ファイルをInDesignタグ付きテキストに変換します。手順は次のとおりです。</p>
+
+<ol>
+<li>idtagreplacerを起動します
+
+<ul>
+<li>idtagreplacer.jarをダブルクリックしてください。ダイアログが表示されます。</li>
+</ul>
+</li>
+<li>原稿ファイルをドラッグします
+
+<ul>
+<li>表示されたダイアログの下部に「編集記号付きテキストファイルをドラッグしてください。」というメッセージが表示されたら、先ほど作成した原稿ファイル（source.txt）をこのダイアログにドラッグ&amp;ドロップしてください。</li>
+</ul>
+</li>
+</ol><p>原稿ファイルのあるフォルダに、InDesignタグ付きテキストに変換されたファイルが作成されるはずです。ファイル名は（サンプルのtagconf.xmlの設定に従って）source_id.txtとなっているはずです。</p>
+
+<h2>InDesignフォームへの配置</h2>
+
+<p>InDesignのマスターフォームを開き、作成したタグ付きテキストを配置します。手順は次のとおりです。</p>
+
+<ol>
+<li>マスターフォームを開きます
+
+<ul>
+<li>マスターフォームのファイルをダブルクリックして開いてください。</li>
+</ul>
+</li>
+<li>「横組みグリッドツール」を選択します
+
+<ul>
+<li>InDesignのツールボックス（デフォルトで左端に表示されるフローティングバー）にある「横組みグリッドツール」ボタンをクリックします。</li>
+<li>「横組みグリッドツール」ボタンの場所が分からない場合は、（IMを英字入力に切り替えて）キーボードの「y」をタイプします。これで「横組みグリッドツール」ボタンをクリックしたのと同じことになります。</li>
+<li>「横組みグリッドツール」を選択すると、マウスカーソルが細い十字のようなかたちに変わります。</li>
+</ul>
+</li>
+<li>グリッドフレームを作成します
+
+<ul>
+<li>マスターフォームに設定されているガイドに沿って、まず段組みの左段をドラッグします。左段の左上から右下へとマウスをドラッグすると、升目のついたフレームが作成されます。これがグリッドフレームです。</li>
+</ul>
+</li>
+<li>タグ付きテキストを配置します
+
+<ul>
+<li>先の手順で作成したグリッドフレームが選択されている状態（白い小さな□が付いている状態）で、メニューの「ファイル」→「配置...」を選択します。「配置」ダイアログが表示されますので、先ほど作成したタグ付きテキストを選択します。ダイアログ下部にある「グリッドフォーマットの適用」にチェックがついている場合はそれを外し、「開く」ボタンをクリックします。</li>
+<li>「配置」ダイアログは、Command+Dでも表示できます。なお、グリッドフレームの選択が外れてしまった場合は、ツールボックスから「選択ツール」ボタン（黒い矢印）をクリックして、グリッドフレームをクリックし選択し直します。</li>
+</ul>
+</li>
+<li>（テキストの続きを配置します）
+
+<ul>
+<li>今回のサンプルテキストは短いので、上の手順までですべての読み込みが完了しますが、長いテキストの場合、左段だけではテキストが溢れてしまいます。溢れたテキストがある場合、グリッドフレームの右下に赤い四角が現れます。</li>
+<li>溢れたテキストを配置するには、ツールボックスから「選択ツール」ボタン（黒い矢印のボタン）をクリックし、グリッドフレームの右下の赤い四角をクリックします。するとマウスカーソルにテキストの一部が表示されるようになります。</li>
+<li>この状態で、マウスカーソルを右段の左上に持っていき、Shift+クリックします。すると、続きのテキストが自動的にすべて配置されます。</li>
+</ul>
+</li>
+</ol><p>以上の手順で、グリッドにテキストが配置されたはずです。配置されたテキストには、すでにスタイルが適用されていることを確認してください。</p>
+
+<h1>tagconf.xmlの書き方</h1>
+
+<h2>tagconf.xmlの構造</h2>
+
+<p>tagconf.xmlは、とても単純なXMLファイルです。
+構造としてはJavaのプロパティファイルの書式で書かれています。つまり、次のような構造です。</p>
+
+<pre><code>&lt;?xml version="1.0" encoding="Shift_JIS"?&gt;
+&lt;!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd"&gt;
+&lt;properties&gt;
+&lt;entry key="key1"&gt;value1&lt;/entry&gt;
+&lt;entry key="key2"&gt;value2&lt;/entry&gt;
+...
+&lt;/properties&gt;
+</code></pre>
+
+<p>entry要素のkey属性で指定された値がプロパティ名になります。そして、entry要素の値が、そのプロパティ名に対応する値となります。……要するに、上記の例で言えば、key1、key2がプロパティ名です。プロパティkey1の値がvalue1、key2の値がvalue2ということになります。</p>
+
+<p>以下、プロパティ名ごとに、tagconf.xmlの設定内容を説明していきます。既存のtagconf.xmlを見ながら読んでいただくとよいでしょう。</p>
+
+<h2>エンコード</h2>
+
+<p>原稿ファイルの文字コードを指定します。Shift_JISもしくはUTF-8のいずれかを指定できます。</p>
+
+<h2>改行コード</h2>
+
+<p>出力ファイルの改行コードを指定します（原稿ファイルの改行コードは問いません）。InDesignに読み込ませる場合は、この値をCRと指定しておきます。</p>
+
+<p>CRLFやLFと指定してもその通りに出力しますが、InDesign
+はそのファイルを正しく読み込めないかもしれません。出力ファイルを目視で確認したい場合などの例外を除いて、基本的にCRのままにしておきます。</p>
+
+<h2>保存ファイル名</h2>
+
+<p>出力ファイルの名前です。出力ファイルは原稿ファイルと同じディレクトリに作成され、自動的に命名されます。このときの命名ルールをカスタマイズするときに、この設定値を変更します。</p>
+
+<p>設定値の%sには原稿ファイルのファイル名（拡張子を除く）が入ります。</p>
+
+<pre><code>例：
+原稿ファイル：foobar.txt
+設定値：%s_id.txt
+↓
+出力ファイル名は「foobar_id.txt」
+</code></pre>
+
+<h2>段落タグの既定値</h2>
+
+<p>デフォルトの段落スタイルを指定します。デフォルトの段落スタイルとは、無指定の段落を指します。</p>
+
+<h2>段落タグ設定</h2>
+
+<p>段落タグの設定を列挙します。段落タグとは、段落スタイルに変換される編集記号のことです。</p>
+
+<p>idtagreplacerでは、次の2種類の段落タグが利用できます。</p>
+
+<h3>一行段落タグ</h3>
+
+<p>行頭に置かれる編集記号で、その行のみにスタイルが適用されます。たとえば、原稿ファイルで下記のように使うタイプの編集記号です。</p>
+
+<pre><code>原稿ファイルでの使用例：
+■はじめに
+</code></pre>
+
+<p>記号「■」にたとえば「大見出し」のスタイルを対応させている場合、これは「はじめに」という大見出しを表現していることになります。一行段落タグは、このように行頭にあって、その行を修飾するタイプの編集記号です。</p>
+
+<h3>開始／終了段落タグ</h3>
+
+<p>開始を表す編集記号と、終了を表す編集記号の1組がセットになった編集記号です。</p>
+
+<p>開始から終了までのすべての行にスタイルが適用されます。</p>
+
+<pre><code>原稿ファイルでの使用例：
+◆list/◆
+int main(int argc, char** argv)
+
+{
+
+    puts("Hello");
+
+    return 0;
+
+}
+◆/list◆
+</code></pre>
+
+<p>この例では、開始記号「◆list/◆」と終了記号「◆/list◆」を持つ段落タグが使われています。開始記号から終了記号までの間は、この段落タグに対応したスタイルが適用されることになります。</p>
+
+<p>なお、開始記号や終了記号だけが書かれた行は、変換に際して削除されます★現状、開始記号は削除されない★。</p>
+
+<p>段落スタイルで挟むタグを利用する場合は、1行以上にする必要があります。</p>
+
+<pre><code>×正常に変換できない
+◆list/◆aa◆/list◆
+</code></pre>
+
+<h3>設定ファイルに記述する書式</h3>
+
+<p>段落タグの設定は行単位で解釈されます。書式は次の通りです。</p>
+
+<pre><code>一行段落タグの記号 : スタイル名
+</code></pre>
+
+<pre><code>開始記号 終了記号 : スタイル名
+</code></pre>
+
+<p>開始記号と終了記号の間の空白文字（スペースやタブ）は、いくつあってもかまいません。</p>
+
+<p>記号やスタイル名と「:」の間にある空白は、あってもなくてもかまいません。また空白を入れた場合、いくつ入っていてもかまいません。</p>
+
+<h3>オプション</h3>
+
+<p>原則的に編集記号は、idtagreplacerが変換処理を行う際に削除されます。編集記号を削除したくない場合は、スタイル名の先頭に「!」を付けます。</p>
+
+<p>また、スタイル名の先頭に「!!」を付けると、スタイル名と同じプロパティ名に記述されたJavaScriptを実行させることができます。</p>
+
+<h3>注意点</h3>
+
+<h4>段落タグの記述順序</h4>
+
+<p>プログラムは原稿ファイルを1行読み込むと、該当する段落タグがあるかどうかをチェックします。このときプログラムは、必ず設定ファイルに記述された順序に従って段落タグをチェックしていきます。該当する段落タグが見つかったら、それ以降はチェックせずに、原稿ファイルの次の行を読み込みます。</p>
+
+<p>段落タグの記述順序はしばしば重要な意味を持ちます。たとえば「■」という段落タグと「■■」という段落タグを使いたい場合があったとします。このとき、</p>
+
+<pre><code>■   : 大見出し
+■■ : 中見出し
+</code></pre>
+
+<p>などのように書いてしまうと、後者の「中見出し」のスタイルは、一切適用されなくなってしまいます。これは、最初の「■」を見つけた段階でプログラムは「大見出し」と判定してしまい、「■■」をチェックしなくなってしまうからです。こうした場合、次のように順序を逆にして記述します。</p>
+
+<pre><code>■■ : 中見出し
+■   : 大見出し
+</code></pre>
+
+<h4>段落の入れ子と終了記号</h4>
+
+<p>idtagreplacerでは、段落スタイルは入れ子にして使えるようになっています。</p>
+
+<p>たとえば次のような設定があるとします。</p>
+
+<pre><code>設定ファイルでの設定例：
+■■■■■ : コラム小見出し
+■■■■   : コラムタイトル
+◆column/◆ ◆/column◆ : コラム本文
+</code></pre>
+
+<p>この場合、原稿ファイルで次のように記述することもできます。</p>
+
+<pre><code>原稿ファイルでの使用例：
+◆column/◆
+■■■■コラムタイトル
+■■■■■コラム小見出し1
+たとえば、こんな感じに書くこともできます。
+
+■■■■■コラム小見出し2
+...
+◆/column◆
+</code></pre>
+
+<p>この例では、全体を「◆column/◆」と「◆/column◆」で囲まれた中に、さらに段落タグが設定されていることに注意してください。</p>
+
+<p>こうした記述が可能であることは便利ではありますが、一方で、終了記号が記述されていないと見なされた場合、デフォルトの段落スタイルに戻らなくなる、という事態になることがあります。</p>
+
+<h4>開始記号が見つからず、終了記号だけが認識された場合</h4>
+
+<p>終了記号だけが認識された場合、プログラムはエラーを起こしてしまいます。</p>
+
+<p>この問題は、しばしば一行段落タグとの関係で起こることがあります。次のような設定を行って、同じ編集記号で、一行段落タグと開始記号とを兼ねようとした場合がそれに当たります。</p>
+
+<pre><code>◆箇条◆           : 箇条書き
+◆箇条◆ ◆/箇条◆ : 箇条書き
+</code></pre>
+
+<p>このとき、プログラムは一行段落タグのほうを優先して認識しますから（これは、先に記述してあるほうが優先されるからです）、開始記号はけっして認識されません。ですから、これに基づいて原稿ファイルを作成してしまうと、終了記号だけが認識されてエラーになる、という事態が発生します。</p>
+
+<p>次のように設定するなどして、同じ編集記号を使用しないようにしましょう。</p>
+
+<pre><code>◆箇条◆            : 箇条書き
+◆箇条/◆ ◆/箇条◆ : 箇条書き
+</code></pre>
+
+<h2>文字タグ設定</h2>
+
+<p>文字タグの設定を列挙します。文字タグとは、文字スタイルに変換される編集記号のことです。</p>
+
+<p>文字タグは、必ず開始記号と終了記号を持ちます。原稿ファイル内で、たとえば次のように利用する記号です。</p>
+
+<pre><code>原稿ファイルでの使用例：
+ではさっそく◆b/◆idtagreplacer◆/b◆を使ってみましょう。
+</code></pre>
+
+<h3>設定ファイルに記述する書式</h3>
+
+<p>文字タグの設定は段落タグに準じます。段落タグ同様、設定は行単位で解釈されます。</p>
+
+<p>書式は次の通りです。</p>
+
+<pre><code>開始記号 終了記号 : スタイル名
+</code></pre>
+
+<p>開始記号と終了記号の間の空白文字（スペースやタブ）は、いくつあってもかまいません。</p>
+
+<p>記号やスタイル名と「:」の間にある空白は、あってもなくてもかまいません。また空白を入れた場合、それはいくつ入っていてもかまいません。</p>
+
+<h3>オプション</h3>
+
+<p>スタイル名の先頭に「!!」を付けると、スタイル名と同じプロパティ名に記述されたJavaScriptを実行させることができます。</p>
+
+<p>なお、文字タグの編集記号は、idtagreplacerが変換処理を行う際に削除されます。段落タグと異なり、文字タグの場合は、スタイル名の先頭に「!」を付けて編集記号を残すことはできません。</p>
+
+<h2>自由置換設定</h2>
+
+<p>自動的に置換したい文字列を列挙します。換言すれば、これは終了記号のない文字タグのようなものとも言えます。</p>
+
+<p>書式は次の通りです。</p>
+
+<pre><code>置換前の文字列 : 置換後の文字列
+</code></pre>
+
+<p>たとえば、</p>
+
+<pre><code>インターフェース : インタフェース
+</code></pre>
+
+<p>と設定しておけば、原稿ファイル中に出てくる「インターフェース」はすべて「インタフェース」に変換されます。この例は単純な文字列置換でしたが、置換後の文字列には
+InDesignタグを直接書くこともできますので、</p>
+
+<pre><code>●→● : &lt;27A1&gt;
+</code></pre>
+
+<p>のように、終了記号のない文字タグのような感覚で使うこともできます。</p>
+
+<h3>Unicodeの特殊な文字の設定</h3>
+
+<p>先の例は、Unicodeの<a href="http://www.charbase.com/27a1-unicode-black-rightwards-arrow">右矢印</a>になります。このようにキーボードから入力しにくい特殊な文字を設定したい場合は、先と同様に次の書式で記述します。</p>
+
+<pre><code>編集記号 : &lt;Unicodeの4桁の値&gt;
+</code></pre>
+
+<h2>黒丸数字書式</h2>
+
+<p>ここでは、JavaScriptによって自由置換設定を追加しています。</p>
+
+<p>「黒丸数字書式」以外にも、「白丸数字書式」や「黒四角数字書式」「アルファベット」がありますが、これらは設定ファイルを読み込む際に、プログラムから固定的に呼び出されます。このプロパティ名は変更できませんが、もし必要なければ、プロパティそのものを削除しても問題はないはずです。</p>
+
+<p>これらの一連のJavaScriptは、一定のパターンで作成されています。</p>
+
+<pre><code>format = "%d●";
+code = 0x2776 - 1;
+for (var i = 10; i &gt;= 1; i--)
+  App.replaceSigns.add(new ReplaceSign(format.replace('%d', i),
+    new ReplaceTag('&lt;' + (code + i).toString(16) + '&gt;')));
+</code></pre>
+
+<p>1行目のformatには、黒丸数字に変換したい書式が来ます。「%d」の部分に数字が入ります。</p>
+
+<p>2行目の「0x2776」はコードポイントです。この例は黒丸数字ですから、黒丸数字の1に当たるUnicodeの値をここに書き込みます。Unicodeは一般的に16進数で書き表しますので、プログラムでも0xを付けて16進数で表現しています。</p>
+
+<p>3行目の「10」は作成する上限値です。この場合10になっていますから、1から10までの黒丸数字の設定が作成されることになります。</p>
+
+<h2>白丸数字書式</h2>
+
+<p>「黒丸数字書式」と同様です。</p>
+
+<p>ここには、自由置換設定に白丸数字の設定を追加するJavaScriptが書かれています。設定ファイルを読み込む際に、自動的に実行されます。</p>
+
+<p>プロパティ名を変更すると実行されなくなりますが、このプロパティ自体を削除しても問題はないはずです。</p>
+
+<h2>黒四角数字書式</h2>
+
+<p>これも「黒丸数字書式」と同様です。</p>
+
+<p>ここには、自由置換設定に黒四角数字の設定を追加するJavaScriptが書かれています。設定ファイルを読み込む際に、自動的に実行されます。</p>
+
+<p>プロパティ名を変更すると実行されなくなりますが、このプロパティ自体を削除しても問題はないはずです。</p>
+
+<h2>アルファベット</h2>
+
+<p>これも「黒丸数字書式」とほぼ同様です。</p>
+
+<p>ここには、キーボードのキートップのような字形を持つアルファベットの設定を、自由置換設定に追加するJavaScriptが書かれています。設定ファイルを読み込む際に、自動的に実行されます。</p>
+
+<p>プロパティ名を変更すると実行されなくなりますが、このプロパティ自体を削除しても問題はないはずです。</p>
+
+<p>以上で、プロパティの説明は終了です。</p>
+
+<h2>tagconf.xml記述の注意点 ── idtagreplacerの変換処理の順序</h2>
+
+<p>idtagreplacerは、次のような順序でタグ変換を行います。</p>
+
+<ol>
+<li>「&lt;」「&gt;」を見付けたら、その前に「」を追加する</li>
+<li>段落タグの変換を行う</li>
+<li>文字タグの変換を行う</li>
+<li>自由置換の変換を行う</li>
+</ol><p>注意すべき点は、最初に実行される「&lt;」「&gt;」に対する特殊な変換処理です。</p>
+
+<p>この変換は自由置換や文字タグ変換の前に実行されますので、たとえば自由置換設定や文字タグ、段落タグ設定で「&lt;」や「&gt;」を含む文字列にヒットさせたい場合、単純に「&lt;」や「&gt;」を設定ファイルに記述してしまうと、実行結果が不正になる場合があります。なぜなら、自由置換や文字タグ、段落タグの評価が行われる時点には、すでに「&lt;」や「&gt;」の前に「」が挿入されているからです。設定ファイルには明示的に「」を付けて記述する必要があります（※）。</p>
+
+<p>※設定ファイルに記述しなくても、プログラムが自動的に設定情報に「」を付け足すという方法もありますが、いずれにしても動作が不規則であることは免れませんので、そのような実装にはなっていません。その代わり、一度自由置換で変換したInDesignタグを、さらに文字タグや段落タグとして変換する、というような場合には、比較的自然に記述できるようになっています。</p>
+
+<h1>InDesignタグ</h1>
+
+<h2>仕様</h2>
+
+<p>Adobeのユーザーガイドにまとまっています。</p>
+
+<p><a href="http://help.adobe.com/ja_JP/indesign/cs/taggedtext/indesign_cs5_taggedtext.pdf">http://help.adobe.com/ja_JP/indesign/cs/taggedtext/indesign_cs5_taggedtext.pdf</a></p>
+
+<h2>InDesignタグの洗い出し方</h2>
+
+<p>どのようなInDesignタグを書けばよいかを洗い出すには、仕上がりをInDesign上で作成し、それをInDesignタグに書き出すのが手っとり早いです。</p>
+
+<p>書き出し方は次の通りです。</p>
+
+<ol>
+<li>[ファイル]→[書き出し]</li>
+<li>[InDesignタグ付きテキスト]を選択</li>
+<li>[保存]</li>
+<li>[略書き]、エンコーディング[Shift-Jis]</li>
+<li>[保存]</li>
+<li>そのInDesign上で設定されているタグが全部書かれたテキストができる</li>
+<li>当てはまる部分をtagconf.xmlに記述</li>
+<li>ちゃんと変換されるかタグ付テキストを作成してInDesignに流し込む</li>
+</ol><p>Unicodeの値を洗い出すときにも使えますが、これはググったほうが早い気がします</p>
+
+<h1>JavaScript関係の資料</h1>
+
+<h2>プログラム固有のオブジェクト</h2>
+
+<p>通常のJavaScriptのオブジェクト以外に、Javaの標準APIやプログラム固有のオブジェクトを使うことができます。プログラム固有のオブジェクトには、以下のものがあります。</p>
+
+<h3>Appオブジェクト</h3>
+
+<p>Appには中心となるオブジェクトがまとめられています。次のものがあります。</p>
+
+<h4>App.activeParagraphTag</h4>
+
+<p>現在の段落タグが何であるのかを保持するオブジェクトです。実体はJavaのLinkedListで、ここにはParagraphTagというオブジェクトが集められています。</p>
+
+<h4>App.characterSigns</h4>
+
+<p>設定ファイルから読み込んだ文字タグの全設定情報を配列化（リスト化）したものです。実体はJavaの LinkedListで、ここにはCharacterSignというオブジェクトが集められています。</p>
+
+<h4>App.paragraphSigns</h4>
+
+<p>設定ファイルから読み込んだ段落タグの全設定情報を配列化（リスト化）したものです。実体はJavaのLinkedListで、ここにはParagraphSignというオブジェクトが集められています。</p>
+
+<h4>App.replaceSigns</h4>
+
+<p>設定ファイルから読み込んだ自由置換設定の全内容を配列化（リスト化）したものです。実体はJavaのLinkedListで、ここにはReplaceSignというオブジェクトが集められています。</p>
+
+<h4>App.printController</h4>
+
+<p>出力時の操作を管理するオブジェクトです。addCommandメソッドを使って、行うべき操作やその順序を指示します。と言っても、指示できるコマンドは「print」と「remove last para」、その他（何もしない）の3種類だけです。</p>
+
+<p>「print」コマンドは出力を指示できます。「remove last para」は、段落タグの切り替えを指示できます。ただし実際にこれが実行されるのは、addCommandメソッドを呼び出したタイミングではなく、現在処理している行の変換処理がすべて完了したタイミングです。</p>
+
+<h4>App.out</h4>
+
+<p>出力を担当するオブジェクトです。これはアプリケーション固有のオブジェクトで、次のようなメソッドを持っています。</p>
+
+<ol>
+<li>print(str)
+
+<ul>
+<li>引数で渡された文字列を出力ファイルに出力します。プログラムはこのとき改行コードを加えませんし、行が続いているものと見なして動作します。</li>
+</ul>
+</li>
+<li>println(str)
+
+<ul>
+<li>引数で渡された文字列に改行コードを加えて、出力ファイルに出力します。プログラムは、行が終了したことを認識し、必要な段落タグの切り替え処理などを行います。</li>
+</ul>
+</li>
+<li>getLineFeedCode()
+
+<ul>
+<li>設定ファイルに設定された改行コードを返します。返すのは設定値そのままではなく、対応する制御文字のほうです。つまり、たとえば設定値が</li>
+<li>CR であったら、アスキーコード13の改行の制御文字が返されます。</li>
+</ul>
+</li>
+</ol><h3>自由置換設定オブジェクト</h3>
+
+<p>App以外にも、場所によって個別に利用できるオブジェクトがあります。以下、それを列挙していきます。</p>
+
+<p>まず、「黒丸数字書式」「白丸数字書式」「黒四角数字書式」「アルファベット」など、自由置換設定を行うスクリプトで利用できるオブジェクトです。</p>
+
+<h4>ReplaceSign</h4>
+
+<p>自由置換設定の情報を1つ格納するためのオブジェクトです。自由置換設定をJavaScriptで追加したい場合に利用します。</p>
+
+<h4>ReplaceTag</h4>
+
+<p>自由置換設定の置換後の情報を1つ格納するためのオブジェクトです。自由置換設定をJavaScriptで追加したい場合に利用します。</p>
+
+<h3>文字タグ・段落タグ共通オブジェクト</h3>
+
+<p>次に、文字タグや段落タグから呼び出された場合に利用できるオブジェクトです。</p>
+
+<h4>startSign</h4>
+
+<p>開始記号の文字列です。実体はJavaのStringです。</p>
+
+<h4>endSign</h4>
+
+<p>終了記号の文字列です。実体はJavaのStringです。一行段落タグの場合は、undefinedになります。</p>
+
+<h4>targetLine</h4>
+
+<p>現在の処理対象の行の文字列です。実体はJavaのStringです。この文字列の内容は、原稿ファイルの内容そのままではなく、すでにある程度変換処理がなされたものになっています。</p>
+
+<h3>tagName</h3>
+
+<p>スタイル名です。実体はJavaの Stringです。段落タグの場合は、先頭の「!!」が取り除かれています。</p>
+
+<h3>文字タグオブジェクト</h3>
+
+<p>続いて、文字タグから呼び出された場合に利用できるオブジェクト（関数）です。これは、段落タグからでは呼び出せません。</p>
+
+<h4>searchTag()</h4>
+
+<p>引数に関数を取ります。</p>
+
+<p>searchTagは、現在の処理対象の行から文字タグを見付け、処理対象の行を次の3つの部分に分割します。</p>
+
+<ol>
+<li>行の先頭から開始タグの前まで</li>
+<li>開始タグの後ろから終了タグの前まで</li>
+<li>終了タグの後ろから行末まで</li>
+</ol><p>このそれぞれには、タグ自体の文字列は含まれません。</p>
+
+<p>これらの分割した文字列が、引数として渡された関数の引数になります。引数側の関数は、変換結果の文字列を返さなければなりません。</p>
+
+<p>searchTagは、現在の処理対象の行から、文字タグが見付からなくなるまで繰り返し呼ばれます。</p>
+
+<p>searchTagは、おおよそ次のような書式で実装できます。</p>
+
+<pre><code>searchTag(function(left, middle, right) {
+  var result = ...;  // 変換処理を記述
+  return result;     // 変換結果を返す
+});
+
+</code></pre>
+
+<h3>段落タグオブジェクト</h3>
+
+<p>最後に、段落タグから呼び出された場合に利用できるオブジェクトです。これは文字タグからでは呼び出せません。</p>
+
+<h4>ParagraphTag</h4>
+
+<p>段落スタイルを格納するためのオブジェクトです。一時的に段落スタイルを適用したい場合などに使います。</p>
+
+<h2>段落タグで実装する関数</h2>
+
+<p>段落タグから呼び出されるJavaScriptでは、次の関数を実装しなければなりません。</p>
+
+<h3>whenStartSignMuches()</h3>
+
+<p>この関数に、開始タグが見つかったときの処理を記述します。出力したい文字列がある場合は、その文字列をreturnしなければなりません。</p>
+
+<h3>whenEndSignMuches()</h3>
+
+<p>この関数に、終了タグが見つかったときの処理を記述します。whenStartSignMuches同様、出力したい文字列がある場合は、その文字列をreturnしなければなりません。終了タグがない場合は記述しなくてもかまいません。</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Idtagreplacer maintained by <a href="https://github.com/inao">inao</a></p>
+        <p class="copyright">idtagreplacer ──  InDesign tag replacer maintained by <a href="https://github.com/inao">inao</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
