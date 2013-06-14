@@ -3,14 +3,17 @@ idtagreplacer [![Build Status](https://travis-ci.org/inao/idtagreplacer.png)](ht
 
 編集記号で書かれたテキストを、InDesignのタグ付きテキストに変換するプログラムです。
 
+
 背景
 ----------
 
-WEB+DB PRESS編集部で今も現役で使用しているプログラムですが、メンテができなくなっており、@taichiさんの助言に従って残っていたコードをGitHubで公開しています。
+WEB+DB PRESS編集部で使用しているたログラムですが、メンテができなくなっており、@taichiさんの助言に従って残っていたコードをGitHubで公開しています。
 
 md2inao.plとの関係や位置付け、これまでについて詳しくは、以下をご覧ください。
 
 https://gist.github.com/inao/baea09bc6fc53551886b
+
+なお、現在[md2inao](https://github.com/naoya/md2inao)に随時移行中です。
 
 サンプル
 ----------
@@ -54,7 +57,7 @@ InDesign タグ付きテキストについて
 
 http://help.adobe.com/ja_JP/indesign/cs/taggedtext/indesign_cs5_taggedtext.pdf
 
-初期の作者とお礼
+初期の作者とお礼（2013/3）
 ----------
 
 お名前を出してよいかどうかの確認がとれなかったのでお名前は記しませんが、GitHubに登録した段階のコードは、すべてWEB+DB PRESS編集部に元いた1人の編集者が2008年ごろに書きました。
