@@ -7,7 +7,7 @@ idtagreplacer [![Build Status](https://travis-ci.org/inao/idtagreplacer.png)](ht
 背景
 ----------
 
-WEB+DB PRESS編集部で使用しているたログラムですが、メンテができなくなっており、@taichiさんの助言に従って残っていたコードをGitHubで公開しています。
+WEB+DB PRESS編集部で使用していたログラムですが、メンテができなくなっており、@taichiさんの助言に従って残っていたコードをGitHubで公開しています。
 
 md2inao.plとの関係や位置付け、これまでについて詳しくは、以下をご覧ください。
 
